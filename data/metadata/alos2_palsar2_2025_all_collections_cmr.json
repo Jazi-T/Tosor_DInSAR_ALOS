@@ -1,0 +1,95 @@
+{
+  "retrieved_at": "2026-09-06T02:19:54.054477+00:00",
+  "searches": [
+    {
+      "params": {
+        "collection_concept_id": "C2240727799-ORNL_CLOUD",
+        "point": "77.373620,41.961825",
+        "temporal": "2025-01-01T00:00:00Z,2025-12-31T23:59:59Z"
+      },
+      "count": 0,
+      "items": []
+    },
+    {
+      "params": {
+        "collection_concept_id": "C2345896855-ORNL_CLOUD",
+        "point": "77.373620,41.961825",
+        "temporal": "2025-01-01T00:00:00Z,2025-12-31T23:59:59Z"
+      },
+      "count": 0,
+      "items": []
+    },
+    {
+      "params": {
+        "collection_concept_id": "C2389289428-ORNL_CLOUD",
+        "point": "77.373620,41.961825",
+        "temporal": "2025-01-01T00:00:00Z,2025-12-31T23:59:59Z"
+      },
+      "count": 0,
+      "items": []
+    },
+    {
+      "params": {
+        "collection_concept_id": "C2548142753-FEDEO",
+        "point": "77.373620,41.961825",
+        "temporal": "2025-01-01T00:00:00Z,2025-12-31T23:59:59Z"
+      },
+      "count": 0,
+      "items": []
+    },
+    {
+      "params": {
+        "collection_concept_id": "C3235172460-ORNL_CLOUD",
+        "point": "77.373620,41.961825",
+        "temporal": "2025-01-01T00:00:00Z,2025-12-31T23:59:59Z"
+      },
+      "count": 0,
+      "items": []
+    },
+    {
+      "params": {
+        "collection_concept_id": "C3298047930-NSIDC_CPRD",
+        "point": "77.373620,41.961825",
+        "temporal": "2025-01-01T00:00:00Z,2025-12-31T23:59:59Z"
+      },
+      "count": 0,
+      "items": []
+    },
+    {
+      "params": {
+        "collection_concept_id": "C3315903479-ASF",
+        "point": "77.373620,41.961825",
+        "temporal": "2025-01-01T00:00:00Z,2025-12-31T23:59:59Z"
+      },
+      "count": 0,
+      "items": []
+    },
+    {
+      "params": {
+        "collection_concept_id": "C4033732506-ORNL_CLOUD",
+        "point": "77.373620,41.961825",
+        "temporal": "2025-01-01T00:00:00Z,2025-12-31T23:59:59Z"
+      },
+      "count": 0,
+      "items": []
+    },
+    {
+      "params": {
+        "collection_concept_id": "C4289567589-ORNL_CLOUD",
+        "point": "77.373620,41.961825",
+        "temporal": "2025-01-01T00:00:00Z,2025-12-31T23:59:59Z"
+      },
+      "count": 0,
+      "items": []
+    },
+    {
+      "params": {
+        "collection_concept_id": "C4289720514-ORNL_CLOUD",
+        "point": "77.373620,41.961825",
+        "temporal": "2025-01-01T00:00:00Z,2025-12-31T23:59:59Z"
+      },
+      "count": 0,
+      "items": []
+    }
+  ]
+}
