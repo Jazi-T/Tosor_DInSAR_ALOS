@@ -1,0 +1,2944 @@
+{
+  "retrieved_at": "2026-09-06T02:11:46.700279+00:00",
+  "queries": [
+    {
+      "collection_concept_id": "C1206485527-ASF",
+      "point": "77.37362,41.961825",
+      "temporal": "2009-01-01T00:00:00Z,2010-12-31T23:59:59Z"
+    }
+  ],
+  "collections": [
+    {
+      "meta": {
+        "revision-id": 1765,
+        "deleted": false,
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "provider-id": "ASF",
+        "has-combine": false,
+        "user-id": "mattp",
+        "has-formats": false,
+        "associations": {
+          "citations": [
+            "CIT3804077318-ESDIS",
+            "CIT3804315772-ESDIS",
+            "CIT4248449114-ESDIS"
+          ]
+        },
+        "has-spatial-subsetting": false,
+        "native-id": "ALOS_PALSAR_LEVEL1.1",
+        "has-transforms": false,
+        "association-details": {
+          "citations": [
+            {
+              "concept-id": "CIT3804077318-ESDIS"
+            },
+            {
+              "concept-id": "CIT3804315772-ESDIS"
+            },
+            {
+              "concept-id": "CIT4248449114-ESDIS"
+            }
+          ]
+        },
+        "has-variables": false,
+        "concept-id": "C1206485527-ASF",
+        "revision-date": "2026-02-07T21:35:01.740Z",
+        "has-temporal-subsetting": false,
+        "concept-type": "collection"
+      },
+      "umm": {
+        "AdditionalAttributes": [
+          {
+            "Name": "POLARIZATION",
+            "Description": "Radar transmissions are polarized, with components normally termed vertical (V) and horizontal (H). Vertical means that the electric vector is in the plane of incidence; horizontal means the electric vector is perpendicular to the plane of incidence.",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "FLIGHT_LINE",
+            "Description": "Flight line identifies where the aircraft/instrument has flown to acquire data.",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Description": "The general type of active sensor used. Values indicate image resolution: such as standard, fine, wide, scansar wide, SM (strip mode), EW (extra wide). Or indicate resolution + polarization: FBS (fine beam single polarization), FBD (fine beam dual pol). Or atypically the type of product: TOPSAR (high resolution DEM), RPI (repeat pass interferometry), XTI (across track interferometry). Or resolution and product type IW (interferometric wide).",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Description": "Text that describes the beam mode",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "BEAM_MODE_TYPE",
+            "Description": "In most cases, the BEAM_MODE_TYPE value is the same as the BEAM_MODE attribute. Each platform has its own scheme for defining acquisition sensor beam modes. Beam modes often reflect a set configuration of polarization, resolution, and off-nadir pointing angle.",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "FARADAY_ROTATION",
+            "Description": "An effect of the ionosphere that rotates polarizations from HH or VV or HV or VH. Significant for L or P band. Rotation over 5 degrees reduces usefulness for applications such as forest biomass. Effect is reduced at solar minimum.",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "INSAR_STACK_ID",
+            "Description": "An ASF-assigned unique number used internally to unify SAR images over the same location. Used for data that might be used for interferometry.",
+            "DataType": "INT"
+          },
+          {
+            "Name": "INSAR_STACK_SIZE",
+            "Description": "The number of SAR images over the same location in the entire ASF archive. Used for data that may be used for interferometry.",
+            "DataType": "INT"
+          },
+          {
+            "Name": "INSAR_BASELINE",
+            "Description": "The perpendicular distance between two satellites when they took the related two images. Useful for identifying image pairs to use for interferometry.",
+            "DataType": "FLOAT"
+          },
+          {
+            "Name": "DOPPLER",
+            "Description": "The doppler centroid frequency - Useful for SAR processing and interferometry. Related to the squint of the satellite.",
+            "DataType": "FLOAT"
+          },
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Description": "Describes whether the satellite travel direction was ascending towards the north pole, or descending towards the south pole.",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "THUMBNAIL_URL",
+            "Description": "URL that points to this granule's thumbnail image",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "CENTER_FRAME_ID",
+            "Description": "ID of the center frame",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Description": "The path describes a path the satellite will follow over the earth similar to longitude; each path has an assigned number. Combined with a frame number it identifies a specific piece of ground.",
+            "DataType": "INT"
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Description": "The designated frame or scene as defined by various space agencies (ESA, JAXA, CSA) each of which have their own scheme. The frame describes a box over the Earth at a fixed latitude. Combined with a path number (for longitude it identifies a specific piece of ground).",
+            "DataType": "INT"
+          },
+          {
+            "Name": "CENTER_ESA_FRAME",
+            "Description": "The European Space Agency equivalent to the value in the FRAME_NUMBER field",
+            "DataType": "INT"
+          },
+          {
+            "Name": "MISSION_NAME",
+            "Description": "The sitenames where AIRSAR, AIRMOSS, and UAVSAR acquisitions were taken.",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "GRANULE_TYPE",
+            "Description": "Identifies the type of data by combining platform, beam mode type, and coverage (frame/swath)",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "PROCESSING_DATE",
+            "Description": "The date the data was processed",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "PROCESSING_DESCRIPTION",
+            "Description": "Describes what the data was processed to. For example: low resolution terrain corrected ALOS data.",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Description": "SAR imagery is taken with the sensor pointing either left or right of the satellite. Most data is right-looking.",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "PROCESSING_TYPE",
+            "Description": "Indicates the type of product, such as browse, metadata, L1, complex, amplitude, projected, terrain corrected.",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Description": "Indicates how much processing has been done to the data: L1, L1.0 unprocessed; L1.1 single look complex; L1, L1.5 amplitude image; L2, L2.2 terrain corrected image.",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "PROCESSING_TYPE_DISPLAY",
+            "Description": "Label that will be displayed in ASF's Vertex interface",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "BYTES",
+            "Description": "Product size in bytes.",
+            "DataType": "FLOAT"
+          },
+          {
+            "Name": "MD5SUM",
+            "Description": "Checksum",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Description": "The angle the sensor points away from the satellite's nadir (off to the side). Larger angles correspond to imaging farther away from the satellite.",
+            "DataType": "FLOAT"
+          },
+          {
+            "Name": "ACQUISITION_DATE",
+            "Description": "Date the data was acquired by the satellite or aircraft and instrument.",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "CENTER_LON",
+            "Description": "Longitude of the center of the scene or frame.",
+            "DataType": "FLOAT"
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Description": "Latitude of the center of the scene or frame.",
+            "DataType": "FLOAT"
+          },
+          {
+            "Name": "NEAR_START_LAT",
+            "Description": "Latitude of the granule where imaging began nearest to the satellite. For an ascending satellite, it locates the lower left corner of a north-oriented image.",
+            "DataType": "FLOAT"
+          },
+          {
+            "Name": "NEAR_START_LON",
+            "Description": "Longitude of the granule where imaging began nearest the satellite. For an ascending satellite, it locates the lower left corner of a north-oriented image.",
+            "DataType": "FLOAT"
+          },
+          {
+            "Name": "FAR_START_LAT",
+            "Description": "Latitude of the granule where imaging began farthest from the satellite. For an ascending satellite, it locates the lower right corner of a north-oriented image.",
+            "DataType": "FLOAT"
+          },
+          {
+            "Name": "FAR_START_LON",
+            "Description": "Latitude of the granule where imaging began farthest from the satellite. For an ascending satellite, it locates the lower right corner of a north-oriented image.",
+            "DataType": "FLOAT"
+          },
+          {
+            "Name": "NEAR_END_LAT",
+            "Description": "Latitude of the granule where imaging ended nearest to the satellite. For an ascending satellite, it locates the upper left corner of a north-oriented image.",
+            "DataType": "FLOAT"
+          },
+          {
+            "Name": "NEAR_END_LON",
+            "Description": "Longitude of the granule where imaging ended nearest to the satellite. For an ascending satellite, it locates the upper left corner of a north-oriented image.",
+            "DataType": "FLOAT"
+          },
+          {
+            "Name": "FAR_END_LAT",
+            "Description": "Latitude of the granule where imaging ended farthest from the satellite. For an ascending satellite, it locates the upper right corner of a north-oriented image.",
+            "DataType": "FLOAT"
+          },
+          {
+            "Name": "FAR_END_LON",
+            "Description": "Longitude of the granule where imaging ended farthest from the satellite. For an ascending satellite, it locates the upper right corner of a north-oriented image.",
+            "DataType": "FLOAT"
+          },
+          {
+            "Name": "ASF_PLATFORM",
+            "Description": "Internal ASF platform name",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "GROUP_ID",
+            "Description": "ID that helps ASF group products",
+            "DataType": "STRING"
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "CoordinateSystem": "CARTESIAN",
+              "BoundingRectangles": [
+                {
+                  "WestBoundingCoordinate": -180,
+                  "NorthBoundingCoordinate": 90,
+                  "EastBoundingCoordinate": 180,
+                  "SouthBoundingCoordinate": -90
+                }
+              ]
+            }
+          },
+          "GranuleSpatialRepresentation": "GEODETIC"
+        },
+        "CollectionProgress": "COMPLETE",
+        "StandardProduct": false,
+        "ScienceKeywords": [
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "AGRICULTURE",
+            "Term": "FOREST SCIENCE",
+            "VariableLevel1": "REFORESTATION"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "BIOSPHERE",
+            "Term": "ECOSYSTEMS",
+            "VariableLevel1": "TERRESTRIAL ECOSYSTEMS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "FROZEN GROUND",
+            "VariableLevel1": "PERMAFROST"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "FROZEN GROUND",
+            "VariableLevel1": "ROCK GLACIERS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "GLACIERS/ICE SHEETS",
+            "VariableLevel1": "GLACIER ELEVATION/ICE SHEET ELEVATION"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "GLACIERS/ICE SHEETS",
+            "VariableLevel1": "GLACIER MOTION/ICE SHEET MOTION"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "GLACIERS/ICE SHEETS",
+            "VariableLevel1": "GLACIER THICKNESS/ICE SHEET THICKNESS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "GLACIERS/ICE SHEETS",
+            "VariableLevel1": "GLACIER TOPOGRAPHY/ICE SHEET TOPOGRAPHY"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "GLACIERS/ICE SHEETS",
+            "VariableLevel1": "GLACIERS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "GLACIERS/ICE SHEETS",
+            "VariableLevel1": "ICE SHEETS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "GLACIERS/ICE SHEETS",
+            "VariableLevel1": "ICEBERGS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SEA ICE",
+            "VariableLevel1": "ICE DEFORMATION"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SEA ICE",
+            "VariableLevel1": "ICE DEPTH/THICKNESS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SEA ICE",
+            "VariableLevel1": "ICE EDGES"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SEA ICE",
+            "VariableLevel1": "ICE EXTENT"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SEA ICE",
+            "VariableLevel1": "ICE FLOES"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SEA ICE",
+            "VariableLevel1": "ICE GROWTH/MELT"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SEA ICE",
+            "VariableLevel1": "ICE ROUGHNESS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SEA ICE",
+            "VariableLevel1": "ICE TEMPERATURE"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SEA ICE",
+            "VariableLevel1": "ICE TYPES"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SEA ICE",
+            "VariableLevel1": "ICEBERGS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SEA ICE",
+            "VariableLevel1": "LEADS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SEA ICE",
+            "VariableLevel1": "PACK ICE"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SEA ICE",
+            "VariableLevel1": "POLYNYAS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SEA ICE",
+            "VariableLevel1": "REFLECTANCE"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SEA ICE",
+            "VariableLevel1": "SEA ICE MOTION"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SNOW/ICE",
+            "VariableLevel1": "ICE EXTENT"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SNOW/ICE",
+            "VariableLevel1": "ICE GROWTH/MELT"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SNOW/ICE",
+            "VariableLevel1": "ICE MOTION"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SNOW/ICE",
+            "VariableLevel1": "ICE VELOCITY"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SNOW/ICE",
+            "VariableLevel1": "LAKE ICE"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SNOW/ICE",
+            "VariableLevel1": "PERMAFROST"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SNOW/ICE",
+            "VariableLevel1": "RIVER ICE"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SNOW/ICE",
+            "VariableLevel1": "SNOW COVER"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "LAND SURFACE",
+            "Term": "EROSION/SEDIMENTATION",
+            "VariableLevel1": "LANDSLIDES"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "LAND SURFACE",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "AEOLIAN LANDFORMS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "LAND SURFACE",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "COASTAL LANDFORMS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "LAND SURFACE",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "FLUVIAL LANDFORMS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "LAND SURFACE",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "GLACIAL LANDFORMS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "LAND SURFACE",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "KARST LANDFORMS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "LAND SURFACE",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "TECTONIC LANDFORMS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "LAND SURFACE",
+            "Term": "LAND USE/LAND COVER",
+            "VariableLevel1": "LAND USE/LAND COVER CLASSIFICATION"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "LAND SURFACE",
+            "Term": "LANDSCAPE",
+            "VariableLevel1": "LANDSCAPE ECOLOGY"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "LAND SURFACE",
+            "Term": "LANDSCAPE",
+            "VariableLevel1": "LANDSCAPE PATTERNS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "LAND SURFACE",
+            "Term": "LANDSCAPE",
+            "VariableLevel1": "LANDSCAPE PROCESSES"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "LAND SURFACE",
+            "Term": "LANDSCAPE",
+            "VariableLevel1": "REFORESTATION"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "LAND SURFACE",
+            "Term": "TOPOGRAPHY",
+            "VariableLevel1": "SURFACE ROUGHNESS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "LAND SURFACE",
+            "Term": "TOPOGRAPHY",
+            "VariableLevel1": "TERRAIN ELEVATION"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "LAND SURFACE",
+            "Term": "TOPOGRAPHY",
+            "VariableLevel1": "TOPOGRAPHIC EFFECTS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "COASTAL PROCESSES",
+            "VariableLevel1": "BARRIER ISLANDS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "COASTAL PROCESSES",
+            "VariableLevel1": "BEACHES"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "COASTAL PROCESSES",
+            "VariableLevel1": "DELTAS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "COASTAL PROCESSES",
+            "VariableLevel1": "DUNES"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "COASTAL PROCESSES",
+            "VariableLevel1": "ESTUARIES"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "COASTAL PROCESSES",
+            "VariableLevel1": "FJORDS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "COASTAL PROCESSES",
+            "VariableLevel1": "INLETS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "COASTAL PROCESSES",
+            "VariableLevel1": "LAGOONS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "COASTAL PROCESSES",
+            "VariableLevel1": "MANGROVES"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "COASTAL PROCESSES",
+            "VariableLevel1": "MARSHES"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "COASTAL PROCESSES",
+            "VariableLevel1": "ROCKY COASTS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "COASTAL PROCESSES",
+            "VariableLevel1": "SHORELINES"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "OCEAN WAVES",
+            "VariableLevel1": "WIND WAVES"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "OCEAN WINDS",
+            "VariableLevel1": "SURFACE WINDS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "SEA ICE",
+            "VariableLevel1": "ICE DEFORMATION"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "SEA ICE",
+            "VariableLevel1": "ICE DEPTH/THICKNESS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "SEA ICE",
+            "VariableLevel1": "ICE EDGES"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "SEA ICE",
+            "VariableLevel1": "ICE EXTENT"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "SEA ICE",
+            "VariableLevel1": "ICE FLOES"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "SEA ICE",
+            "VariableLevel1": "ICE ROUGHNESS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "SEA ICE",
+            "VariableLevel1": "ICE TYPES"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "SEA ICE",
+            "VariableLevel1": "ICEBERGS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "SEA ICE",
+            "VariableLevel1": "LEADS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "SEA ICE",
+            "VariableLevel1": "PACK ICE"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "SEA ICE",
+            "VariableLevel1": "POLYNYAS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "OCEANS",
+            "Term": "SEA ICE",
+            "VariableLevel1": "SEA ICE MOTION"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "GLACIAL LANDFORMS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "TECTONIC LANDFORMS",
+            "VariableLevel2": "CALDERA"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "TECTONIC LANDFORMS",
+            "VariableLevel2": "CINDER CONE"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "TECTONIC LANDFORMS",
+            "VariableLevel2": "FAULTS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "TECTONIC LANDFORMS",
+            "VariableLevel2": "FOLDS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "TECTONIC LANDFORMS",
+            "VariableLevel2": "GEYSER"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "TECTONIC LANDFORMS",
+            "VariableLevel2": "GRABEN"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "TECTONIC LANDFORMS",
+            "VariableLevel2": "HORST"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "TECTONIC LANDFORMS",
+            "VariableLevel2": "LAVA DOME"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "TECTONIC LANDFORMS",
+            "VariableLevel2": "LAVA PLAIN"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "TECTONIC LANDFORMS",
+            "VariableLevel2": "MAAR"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "TECTONIC LANDFORMS",
+            "VariableLevel2": "MOUNTAINS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "TECTONIC LANDFORMS",
+            "VariableLevel2": "PLATEAU"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "TECTONIC LANDFORMS",
+            "VariableLevel2": "RIDGE"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "TECTONIC LANDFORMS",
+            "VariableLevel2": "RIFT VALLEY"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "TECTONIC LANDFORMS",
+            "VariableLevel2": "TUYA"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "TECTONIC LANDFORMS",
+            "VariableLevel2": "VOLCANO"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES",
+            "VariableLevel1": "TECTONIC LANDFORMS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "TECTONICS",
+            "VariableLevel1": "EARTHQUAKES"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "TECTONICS",
+            "VariableLevel1": "EARTHQUAKES"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "TECTONICS",
+            "VariableLevel1": "PLATE TECTONICS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "TECTONICS",
+            "VariableLevel1": "PLATE TECTONICS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "TECTONICS",
+            "VariableLevel1": "VOLCANIC ACTIVITY"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "TECTONICS",
+            "VariableLevel1": "VOLCANIC ACTIVITY"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "TERRESTRIAL HYDROSPHERE",
+            "Term": "GLACIERS/ICE SHEETS",
+            "VariableLevel1": "GLACIER ELEVATION/ICE SHEET ELEVATION"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "TERRESTRIAL HYDROSPHERE",
+            "Term": "GLACIERS/ICE SHEETS",
+            "VariableLevel1": "GLACIER MOTION/ICE SHEET MOTION"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "TERRESTRIAL HYDROSPHERE",
+            "Term": "GLACIERS/ICE SHEETS",
+            "VariableLevel1": "GLACIER TOPOGRAPHY/ICE SHEET TOPOGRAPHY"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "TERRESTRIAL HYDROSPHERE",
+            "Term": "GLACIERS/ICE SHEETS",
+            "VariableLevel1": "GLACIERS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "TERRESTRIAL HYDROSPHERE",
+            "Term": "GLACIERS/ICE SHEETS",
+            "VariableLevel1": "ICE SHEETS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "TERRESTRIAL HYDROSPHERE",
+            "Term": "GLACIERS/ICE SHEETS",
+            "VariableLevel1": "ICEBERGS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "TERRESTRIAL HYDROSPHERE",
+            "Term": "SNOW/ICE",
+            "VariableLevel1": "ICE EXTENT"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "TERRESTRIAL HYDROSPHERE",
+            "Term": "SNOW/ICE",
+            "VariableLevel1": "ICE GROWTH/MELT"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "TERRESTRIAL HYDROSPHERE",
+            "Term": "SNOW/ICE",
+            "VariableLevel1": "ICE MOTION"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "TERRESTRIAL HYDROSPHERE",
+            "Term": "SNOW/ICE",
+            "VariableLevel1": "ICE VELOCITY"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "TERRESTRIAL HYDROSPHERE",
+            "Term": "SNOW/ICE",
+            "VariableLevel1": "LAKE ICE"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "TERRESTRIAL HYDROSPHERE",
+            "Term": "SNOW/ICE",
+            "VariableLevel1": "PERMAFROST"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "TERRESTRIAL HYDROSPHERE",
+            "Term": "SNOW/ICE",
+            "VariableLevel1": "RIVER ICE"
+          }
+        ],
+        "TemporalExtents": [
+          {
+            "PrecisionOfSeconds": 1,
+            "EndsAtPresentFlag": false,
+            "RangeDateTimes": [
+              {
+                "BeginningDateTime": "2006-01-23T00:00:00.000Z",
+                "EndingDateTime": "2011-05-23T00:00:00.000Z"
+              }
+            ]
+          }
+        ],
+        "ProcessingLevel": {
+          "Id": "1"
+        },
+        "DOI": {
+          "DOI": "10.5067/PAFUZQHBZF3A",
+          "Authority": "https://doi.org/"
+        },
+        "ShortName": "ALOS_PSR_L1.1",
+        "EntryTitle": "ALOS PALSAR Level 1.1 Product",
+        "RelatedUrls": [
+          {
+            "Description": "Search and download data granules using the ASF Data Search graphical search interface Vertex.",
+            "URLContentType": "DistributionURL",
+            "Type": "GET DATA",
+            "URL": "https://search.asf.alaska.edu/",
+            "Subtype": "VERTEX"
+          },
+          {
+            "URLContentType": "DistributionURL",
+            "Description": "Search and download data granules using NASA Earthdata Search interface.",
+            "Type": "GET DATA",
+            "Subtype": "Earthdata Search",
+            "URL": "https://search.earthdata.nasa.gov/search/granules?p=C1206485527-ASF"
+          },
+          {
+            "URL": "https://www.eorc.jaxa.jp/ALOS/en/doc/fdata/PALSAR_x_Format_EL.pdf",
+            "URLContentType": "PublicationURL",
+            "Type": "VIEW RELATED INFORMATION",
+            "Subtype": "DATA PRODUCT SPECIFICATION",
+            "Description": "Product format specification for the ALOS PALSAR Level 1.1 product"
+          },
+          {
+            "URL": "https://www.eorc.jaxa.jp/ALOS/en/alos/a1_calval_e.htm",
+            "URLContentType": "PublicationURL",
+            "Type": "VIEW RELATED INFORMATION",
+            "Subtype": "INSTRUMENT/SENSOR CALIBRATION DOCUMENTATION",
+            "Description": "ALOS calibration information"
+          }
+        ],
+        "DataDates": [
+          {
+            "Type": "CREATE",
+            "Date": "2021-02-23T22:38:15.000Z"
+          },
+          {
+            "Type": "UPDATE",
+            "Date": "2021-05-25T18:49:56.000Z"
+          }
+        ],
+        "Abstract": "ALOS PALSAR Level 1.1",
+        "MetadataDates": [
+          {
+            "Type": "CREATE",
+            "Date": "2023-04-13T19:54:00.000Z"
+          },
+          {
+            "Type": "UPDATE",
+            "Date": "2026-02-07T21:30:00.000Z"
+          }
+        ],
+        "Version": "1",
+        "UseConstraints": {
+          "EULAIdentifiers": [
+            "1b454cfb-c298-4072-ae3c-3c133ce810c8"
+          ],
+          "LicenseText": "ALOS/PALSAR/AVNIR-2 and ALOS-2 ScanSAR data products usage conditions\r\n\r\n(i) JAXA does not guarantee any specific quality and the timely provision of the ALOS/PALSAR/AVNIR-2 and ALOS-2 ScanSAR data products and shall not be liable for any damage caused by using them.\r\n\r\n(ii) The intellectual property rights, including but not limited to copyrights, of the ALOS/PALSAR/AVNIR-2 and ALOS-2 ScanSAR data Products belong to JAXA.\r\n\r\n(iii) The user shall retain the ownership of value-added products (modified products with high-level processing which are irreversible to standard data. High-level data processing includes data analysis or combining multiple- ALOS/PALSAR/AVNIR-2 and ALOS-2 ScanSAR data Product, image processing based on external information, and physical quantity conversion).\r\n\r\n(iv) When the user publish and/or redistribute their-generated value-added products based on the  ALOS/PALSAR/AVNIR-2 and ALOS-2 ScanSAR data Product, users will indicate, “the original ALOS/PALSAR/AVNIR-2 and ALOS-2 ScanSAR data products are provided by JAXA”.\r\n\r\n(v) When the user intends to publish the results directly using or indirectly based on the ALOS/PALSAR/AVNIR-2 and ALOS-2 ScanSAR data products, the user will indicate owner of the Data Products as “©JAXA [year of acquisition]. All rights reserved”.",
+          "FreeAndOpenData": true
+        },
+        "DataCenters": [
+          {
+            "Roles": [
+              "ORIGINATOR",
+              "PROCESSOR"
+            ],
+            "ContactInformation": {
+              "RelatedUrls": [
+                {
+                  "Description": "Home Page for the Earth Observation Research Center, Japan Aerospace Exploration Agency, Japan",
+                  "URL": "http://www.eorc.jaxa.jp/en/index.html",
+                  "URLContentType": "DataCenterURL",
+                  "Type": "HOME PAGE"
+                }
+              ]
+            },
+            "ShortName": "JP/JAXA/EORC",
+            "LongName": "Earth Observation Research Center, Japan Aerospace Exploration Agency, Japan"
+          },
+          {
+            "Roles": [
+              "ARCHIVER",
+              "DISTRIBUTOR",
+              "PROCESSOR"
+            ],
+            "ContactInformation": {
+              "RelatedUrls": [
+                {
+                  "Description": "Home Page for the Alaska Satellite Facility",
+                  "URLContentType": "DataCenterURL",
+                  "Type": "HOME PAGE",
+                  "URL": "https://www.asf.alaska.edu/"
+                }
+              ],
+              "ContactMechanisms": [
+                {
+                  "Type": "Email",
+                  "Value": "uso@asf.alaska.edu"
+                }
+              ]
+            },
+            "ShortName": "ASF",
+            "LongName": "Alaska Satellite Facility"
+          }
+        ],
+        "Platforms": [
+          {
+            "Type": "Earth Observation Satellites",
+            "ShortName": "ALOS",
+            "LongName": "Advanced Land Observing Satellite",
+            "Instruments": [
+              {
+                "ShortName": "PALSAR",
+                "LongName": "Phased Array type L-band Synthetic Aperture Radar",
+                "ComposedOf": [
+                  {
+                    "ShortName": "PLR"
+                  },
+                  {
+                    "ShortName": "WB1"
+                  },
+                  {
+                    "ShortName": "WB2"
+                  },
+                  {
+                    "ShortName": "FBD"
+                  },
+                  {
+                    "ShortName": "FBS"
+                  },
+                  {
+                    "ShortName": "DSN"
+                  }
+                ],
+                "OperationalModes": [
+                  "Arctic",
+                  "Antarctic"
+                ]
+              }
+            ]
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/collection/v1.18.6",
+          "Name": "UMM-C",
+          "Version": "1.18.6"
+        }
+      }
+    }
+  ],
+  "items": [
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G2102664609-ASF",
+        "revision-id": 2,
+        "native-id": "ALPSRP190600830-L1.1",
+        "collection-concept-id": "C1206485527-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2021-08-26T00:58:10.867Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2009-08-22T17:15:30.754Z",
+            "EndingDateTime": "2009-08-22T17:15:39.288Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 19060
+          }
+        ],
+        "GranuleUR": "ALPSRP190600830-L1.1",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASF_PLATFORM",
+            "Values": [
+              "ALOS"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "830"
+            ]
+          },
+          {
+            "Name": "CENTER_FRAME_ID",
+            "Values": [
+              "830"
+            ]
+          },
+          {
+            "Name": "CENTER_ESA_FRAME",
+            "Values": [
+              "840"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "519"
+            ]
+          },
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "ASCENDING"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "R"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.3"
+            ]
+          },
+          {
+            "Name": "ACQUISITION_DATE",
+            "Values": [
+              "2009-08-22T17:15:30.754Z"
+            ]
+          },
+          {
+            "Name": "PROCESSING_DATE",
+            "Values": [
+              "2021-08-26T00:58:03.000Z"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "77.525"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "42.08"
+            ]
+          },
+          {
+            "Name": "NEAR_START_LAT",
+            "Values": [
+              "42.389"
+            ]
+          },
+          {
+            "Name": "NEAR_START_LON",
+            "Values": [
+              "77.88"
+            ]
+          },
+          {
+            "Name": "FAR_START_LAT",
+            "Values": [
+              "41.877"
+            ]
+          },
+          {
+            "Name": "FAR_START_LON",
+            "Values": [
+              "77.998"
+            ]
+          },
+          {
+            "Name": "FAR_END_LAT",
+            "Values": [
+              "41.769"
+            ]
+          },
+          {
+            "Name": "FAR_END_LON",
+            "Values": [
+              "77.174"
+            ]
+          },
+          {
+            "Name": "NEAR_END_LAT",
+            "Values": [
+              "42.282"
+            ]
+          },
+          {
+            "Name": "NEAR_END_LON",
+            "Values": [
+              "77.048"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_TYPE",
+            "Values": [
+              "FBD"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "FBD"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ALOS PALSAR sensor: High Resolution Observation Mode (dual polarization)"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH+HV"
+            ]
+          },
+          {
+            "Name": "GRANULE_TYPE",
+            "Values": [
+              "ALOS_PALSAR_SCENE"
+            ]
+          },
+          {
+            "Name": "PROCESSING_TYPE",
+            "Values": [
+              "L1.1"
+            ]
+          },
+          {
+            "Name": "PROCESSING_DESCRIPTION",
+            "Values": [
+              "ALOS PALSAR Level 1.1 processing level. Single-Look Complex (SLC) equally spaced on slant range.  Product generated for all non-SCANSAR data.  SLC generated and edited for each polarization of multi-polarization mode."
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "L1"
+            ]
+          },
+          {
+            "Name": "PROCESSING_TYPE_DISPLAY",
+            "Values": [
+              "Level 1.1 Image"
+            ]
+          },
+          {
+            "Name": "BYTES",
+            "Values": [
+              "1397043146"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 42.282,
+                        "Longitude": 77.048
+                      },
+                      {
+                        "Latitude": 41.769,
+                        "Longitude": 77.174
+                      },
+                      {
+                        "Latitude": 41.877,
+                        "Longitude": 77.998
+                      },
+                      {
+                        "Latitude": 42.389,
+                        "Longitude": 77.88
+                      },
+                      {
+                        "Latitude": 42.282,
+                        "Longitude": 77.048
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2021-08-26T00:58:03.000Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2021-08-26T00:58:03.000Z"
+          }
+        ],
+        "CollectionReference": {
+          "EntryTitle": "ALOS_PALSAR_LEVEL1.1"
+        },
+        "RelatedUrls": [
+          {
+            "Type": "GET DATA",
+            "URL": "https://datapool.asf.alaska.edu/L1.1/A3/ALPSRP190600830-H1.1__A.zip"
+          },
+          {
+            "Type": "GET RELATED VISUALIZATION",
+            "URL": "https://datapool.asf.alaska.edu/BROWSE/A3/EALPSRP190600830.jpg"
+          }
+        ],
+        "DataGranule": {
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "Not provided",
+              "Size": 1332.324167251587,
+              "SizeUnit": "MB"
+            }
+          ],
+          "DayNightFlag": "Unspecified",
+          "Identifiers": [
+            {
+              "Identifier": "ALPSRP190600830",
+              "IdentifierType": "ProducerGranuleId"
+            }
+          ],
+          "ProductionDateTime": "2009-08-22T17:15:30.754Z"
+        },
+        "Platforms": [
+          {
+            "Instruments": [
+              {
+                "ComposedOf": [
+                  {
+                    "ShortName": "FBD"
+                  }
+                ],
+                "ShortName": "PALSAR"
+              }
+            ],
+            "ShortName": "ALOS"
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    },
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G2171107814-ASF",
+        "revision-id": 1,
+        "native-id": "ALPSRP230860830-L1.1",
+        "collection-concept-id": "C1206485527-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2021-11-23T07:35:03.694Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2010-05-25T17:14:41.987Z",
+            "EndingDateTime": "2010-05-25T17:14:50.558Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 23086
+          }
+        ],
+        "GranuleUR": "ALPSRP230860830-L1.1",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASF_PLATFORM",
+            "Values": [
+              "ALOS"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "830"
+            ]
+          },
+          {
+            "Name": "CENTER_FRAME_ID",
+            "Values": [
+              "830"
+            ]
+          },
+          {
+            "Name": "CENTER_ESA_FRAME",
+            "Values": [
+              "840"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "519"
+            ]
+          },
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "ASCENDING"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "R"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.3"
+            ]
+          },
+          {
+            "Name": "ACQUISITION_DATE",
+            "Values": [
+              "2010-05-25T17:14:41.987Z"
+            ]
+          },
+          {
+            "Name": "PROCESSING_DATE",
+            "Values": [
+              "2021-11-23T07:34:56.000Z"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "77.544"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "42.083"
+            ]
+          },
+          {
+            "Name": "NEAR_START_LAT",
+            "Values": [
+              "42.394"
+            ]
+          },
+          {
+            "Name": "NEAR_START_LON",
+            "Values": [
+              "77.905"
+            ]
+          },
+          {
+            "Name": "FAR_START_LAT",
+            "Values": [
+              "41.88"
+            ]
+          },
+          {
+            "Name": "FAR_START_LON",
+            "Values": [
+              "78.024"
+            ]
+          },
+          {
+            "Name": "FAR_END_LAT",
+            "Values": [
+              "41.77"
+            ]
+          },
+          {
+            "Name": "FAR_END_LON",
+            "Values": [
+              "77.187"
+            ]
+          },
+          {
+            "Name": "NEAR_END_LAT",
+            "Values": [
+              "42.285"
+            ]
+          },
+          {
+            "Name": "NEAR_END_LON",
+            "Values": [
+              "77.062"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_TYPE",
+            "Values": [
+              "FBD"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "FBD"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ALOS PALSAR sensor: High Resolution Observation Mode (dual polarization)"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH+HV"
+            ]
+          },
+          {
+            "Name": "GRANULE_TYPE",
+            "Values": [
+              "ALOS_PALSAR_SCENE"
+            ]
+          },
+          {
+            "Name": "PROCESSING_TYPE",
+            "Values": [
+              "L1.1"
+            ]
+          },
+          {
+            "Name": "PROCESSING_DESCRIPTION",
+            "Values": [
+              "ALOS PALSAR Level 1.1 processing level. Single-Look Complex (SLC) equally spaced on slant range.  Product generated for all non-SCANSAR data.  SLC generated and edited for each polarization of multi-polarization mode."
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "L1"
+            ]
+          },
+          {
+            "Name": "PROCESSING_TYPE_DISPLAY",
+            "Values": [
+              "Level 1.1 Image"
+            ]
+          },
+          {
+            "Name": "BYTES",
+            "Values": [
+              "1416052019"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 42.285,
+                        "Longitude": 77.062
+                      },
+                      {
+                        "Latitude": 41.77,
+                        "Longitude": 77.187
+                      },
+                      {
+                        "Latitude": 41.88,
+                        "Longitude": 78.024
+                      },
+                      {
+                        "Latitude": 42.394,
+                        "Longitude": 77.905
+                      },
+                      {
+                        "Latitude": 42.285,
+                        "Longitude": 77.062
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2021-11-23T07:34:56.000Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2021-11-23T07:34:56.000Z"
+          }
+        ],
+        "CollectionReference": {
+          "EntryTitle": "ALOS_PALSAR_LEVEL1.1"
+        },
+        "RelatedUrls": [
+          {
+            "Type": "GET DATA",
+            "URL": "https://datapool.asf.alaska.edu/L1.1/A3/ALPSRP230860830-H1.1__A.zip"
+          },
+          {
+            "Type": "GET RELATED VISUALIZATION",
+            "URL": "https://datapool.asf.alaska.edu/BROWSE/A3/EALPSRP230860830.jpg"
+          }
+        ],
+        "DataGranule": {
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "Not provided",
+              "Size": 1350.4524412155151,
+              "SizeUnit": "MB"
+            }
+          ],
+          "DayNightFlag": "Unspecified",
+          "Identifiers": [
+            {
+              "Identifier": "ALPSRP230860830",
+              "IdentifierType": "ProducerGranuleId"
+            }
+          ],
+          "ProductionDateTime": "2010-05-25T17:14:41.987Z"
+        },
+        "Platforms": [
+          {
+            "Instruments": [
+              {
+                "ComposedOf": [
+                  {
+                    "ShortName": "FBD"
+                  }
+                ],
+                "ShortName": "PALSAR"
+              }
+            ],
+            "ShortName": "ALOS"
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    },
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G2188390066-ASF",
+        "revision-id": 1,
+        "native-id": "ALPSRP237570830-L1.1",
+        "collection-concept-id": "C1206485527-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2021-12-22T06:58:03.378Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2010-07-10T17:14:14.046Z",
+            "EndingDateTime": "2010-07-10T17:14:22.580Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 23757
+          }
+        ],
+        "GranuleUR": "ALPSRP237570830-L1.1",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASF_PLATFORM",
+            "Values": [
+              "ALOS"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "830"
+            ]
+          },
+          {
+            "Name": "CENTER_FRAME_ID",
+            "Values": [
+              "830"
+            ]
+          },
+          {
+            "Name": "CENTER_ESA_FRAME",
+            "Values": [
+              "840"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "519"
+            ]
+          },
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "ASCENDING"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "R"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.3"
+            ]
+          },
+          {
+            "Name": "ACQUISITION_DATE",
+            "Values": [
+              "2010-07-10T17:14:14.046Z"
+            ]
+          },
+          {
+            "Name": "PROCESSING_DATE",
+            "Values": [
+              "2021-12-22T06:57:56.000Z"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "77.551"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "42.081"
+            ]
+          },
+          {
+            "Name": "NEAR_START_LAT",
+            "Values": [
+              "42.39"
+            ]
+          },
+          {
+            "Name": "NEAR_START_LON",
+            "Values": [
+              "77.909"
+            ]
+          },
+          {
+            "Name": "FAR_START_LAT",
+            "Values": [
+              "41.878"
+            ]
+          },
+          {
+            "Name": "FAR_START_LON",
+            "Values": [
+              "78.027"
+            ]
+          },
+          {
+            "Name": "FAR_END_LAT",
+            "Values": [
+              "41.77"
+            ]
+          },
+          {
+            "Name": "FAR_END_LON",
+            "Values": [
+              "77.196"
+            ]
+          },
+          {
+            "Name": "NEAR_END_LAT",
+            "Values": [
+              "42.282"
+            ]
+          },
+          {
+            "Name": "NEAR_END_LON",
+            "Values": [
+              "77.071"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_TYPE",
+            "Values": [
+              "FBD"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "FBD"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ALOS PALSAR sensor: High Resolution Observation Mode (dual polarization)"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH+HV"
+            ]
+          },
+          {
+            "Name": "GRANULE_TYPE",
+            "Values": [
+              "ALOS_PALSAR_SCENE"
+            ]
+          },
+          {
+            "Name": "PROCESSING_TYPE",
+            "Values": [
+              "L1.1"
+            ]
+          },
+          {
+            "Name": "PROCESSING_DESCRIPTION",
+            "Values": [
+              "ALOS PALSAR Level 1.1 processing level. Single-Look Complex (SLC) equally spaced on slant range.  Product generated for all non-SCANSAR data.  SLC generated and edited for each polarization of multi-polarization mode."
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "L1"
+            ]
+          },
+          {
+            "Name": "PROCESSING_TYPE_DISPLAY",
+            "Values": [
+              "Level 1.1 Image"
+            ]
+          },
+          {
+            "Name": "BYTES",
+            "Values": [
+              "1406613490"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 42.282,
+                        "Longitude": 77.071
+                      },
+                      {
+                        "Latitude": 41.77,
+                        "Longitude": 77.196
+                      },
+                      {
+                        "Latitude": 41.878,
+                        "Longitude": 78.027
+                      },
+                      {
+                        "Latitude": 42.39,
+                        "Longitude": 77.909
+                      },
+                      {
+                        "Latitude": 42.282,
+                        "Longitude": 77.071
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2021-12-22T06:57:56.000Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2021-12-22T06:57:56.000Z"
+          }
+        ],
+        "CollectionReference": {
+          "EntryTitle": "ALOS_PALSAR_LEVEL1.1"
+        },
+        "RelatedUrls": [
+          {
+            "Type": "GET DATA",
+            "URL": "https://datapool.asf.alaska.edu/L1.1/A3/ALPSRP237570830-H1.1__A.zip"
+          },
+          {
+            "Type": "GET RELATED VISUALIZATION",
+            "URL": "https://datapool.asf.alaska.edu/BROWSE/A3/EALPSRP237570830.jpg"
+          }
+        ],
+        "DataGranule": {
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "Not provided",
+              "Size": 1341.4511585235596,
+              "SizeUnit": "MB"
+            }
+          ],
+          "DayNightFlag": "Unspecified",
+          "Identifiers": [
+            {
+              "Identifier": "ALPSRP237570830",
+              "IdentifierType": "ProducerGranuleId"
+            }
+          ],
+          "ProductionDateTime": "2010-07-10T17:14:14.046Z"
+        },
+        "Platforms": [
+          {
+            "Instruments": [
+              {
+                "ComposedOf": [
+                  {
+                    "ShortName": "FBD"
+                  }
+                ],
+                "ShortName": "PALSAR"
+              }
+            ],
+            "ShortName": "ALOS"
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    },
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G1287568726-ASF",
+        "revision-id": 2,
+        "native-id": "ALPSRP240050830-L1.1",
+        "collection-concept-id": "C1206485527-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2021-12-24T11:28:57.286Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2010-07-27T17:16:11.198Z",
+            "EndingDateTime": "2010-07-27T17:16:19.732Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 24005
+          }
+        ],
+        "GranuleUR": "ALPSRP240050830-L1.1",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASF_PLATFORM",
+            "Values": [
+              "ALOS"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "830"
+            ]
+          },
+          {
+            "Name": "CENTER_FRAME_ID",
+            "Values": [
+              "830"
+            ]
+          },
+          {
+            "Name": "CENTER_ESA_FRAME",
+            "Values": [
+              "840"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "520"
+            ]
+          },
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "ASCENDING"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "R"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.3"
+            ]
+          },
+          {
+            "Name": "ACQUISITION_DATE",
+            "Values": [
+              "2010-07-27T17:16:11.198Z"
+            ]
+          },
+          {
+            "Name": "PROCESSING_DATE",
+            "Values": [
+              "2021-12-24T11:28:49.000Z"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "77.02"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "42.07"
+            ]
+          },
+          {
+            "Name": "NEAR_START_LAT",
+            "Values": [
+              "42.378"
+            ]
+          },
+          {
+            "Name": "NEAR_START_LON",
+            "Values": [
+              "77.376"
+            ]
+          },
+          {
+            "Name": "FAR_START_LAT",
+            "Values": [
+              "41.866"
+            ]
+          },
+          {
+            "Name": "FAR_START_LON",
+            "Values": [
+              "77.494"
+            ]
+          },
+          {
+            "Name": "FAR_END_LAT",
+            "Values": [
+              "41.76"
+            ]
+          },
+          {
+            "Name": "FAR_END_LON",
+            "Values": [
+              "76.669"
+            ]
+          },
+          {
+            "Name": "NEAR_END_LAT",
+            "Values": [
+              "42.272"
+            ]
+          },
+          {
+            "Name": "NEAR_END_LON",
+            "Values": [
+              "76.544"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_TYPE",
+            "Values": [
+              "FBD"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "FBD"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ALOS PALSAR sensor: High Resolution Observation Mode (dual polarization)"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH+HV"
+            ]
+          },
+          {
+            "Name": "GRANULE_TYPE",
+            "Values": [
+              "ALOS_PALSAR_SCENE"
+            ]
+          },
+          {
+            "Name": "PROCESSING_TYPE",
+            "Values": [
+              "L1.1"
+            ]
+          },
+          {
+            "Name": "PROCESSING_DESCRIPTION",
+            "Values": [
+              "ALOS PALSAR Level 1.1 processing level. Single-Look Complex (SLC) equally spaced on slant range.  Product generated for all non-SCANSAR data.  SLC generated and edited for each polarization of multi-polarization mode."
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "L1"
+            ]
+          },
+          {
+            "Name": "PROCESSING_TYPE_DISPLAY",
+            "Values": [
+              "Level 1.1 Image"
+            ]
+          },
+          {
+            "Name": "BYTES",
+            "Values": [
+              "1397062382"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 42.272,
+                        "Longitude": 76.544
+                      },
+                      {
+                        "Latitude": 41.76,
+                        "Longitude": 76.669
+                      },
+                      {
+                        "Latitude": 41.866,
+                        "Longitude": 77.494
+                      },
+                      {
+                        "Latitude": 42.378,
+                        "Longitude": 77.376
+                      },
+                      {
+                        "Latitude": 42.272,
+                        "Longitude": 76.544
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2021-12-24T11:28:49.000Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2021-12-24T11:28:49.000Z"
+          }
+        ],
+        "CollectionReference": {
+          "EntryTitle": "ALOS_PALSAR_LEVEL1.1"
+        },
+        "RelatedUrls": [
+          {
+            "Type": "GET DATA",
+            "URL": "https://datapool.asf.alaska.edu/L1.1/A3/ALPSRP240050830-H1.1__A.zip"
+          },
+          {
+            "Type": "GET RELATED VISUALIZATION",
+            "URL": "https://datapool.asf.alaska.edu/BROWSE/A3/EALPSRP240050830.jpg"
+          }
+        ],
+        "DataGranule": {
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "Not provided",
+              "Size": 1332.3425121307373,
+              "SizeUnit": "MB"
+            }
+          ],
+          "DayNightFlag": "Unspecified",
+          "Identifiers": [
+            {
+              "Identifier": "ALPSRP240050830",
+              "IdentifierType": "ProducerGranuleId"
+            }
+          ],
+          "ProductionDateTime": "2010-07-27T17:16:11.198Z"
+        },
+        "Platforms": [
+          {
+            "Instruments": [
+              {
+                "ComposedOf": [
+                  {
+                    "ShortName": "FBD"
+                  }
+                ],
+                "ShortName": "PALSAR"
+              }
+            ],
+            "ShortName": "ALOS"
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    },
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G1287876223-ASF",
+        "revision-id": 2,
+        "native-id": "ALPSRP244280830-L1.1",
+        "collection-concept-id": "C1206485527-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2022-01-12T05:56:14.382Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2010-08-25T17:13:41.804Z",
+            "EndingDateTime": "2010-08-25T17:13:50.338Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 24428
+          }
+        ],
+        "GranuleUR": "ALPSRP244280830-L1.1",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASF_PLATFORM",
+            "Values": [
+              "ALOS"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "830"
+            ]
+          },
+          {
+            "Name": "CENTER_FRAME_ID",
+            "Values": [
+              "830"
+            ]
+          },
+          {
+            "Name": "CENTER_ESA_FRAME",
+            "Values": [
+              "840"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "519"
+            ]
+          },
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "ASCENDING"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "R"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.3"
+            ]
+          },
+          {
+            "Name": "ACQUISITION_DATE",
+            "Values": [
+              "2010-08-25T17:13:41.804Z"
+            ]
+          },
+          {
+            "Name": "PROCESSING_DATE",
+            "Values": [
+              "2022-01-12T05:56:06.000Z"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "77.556"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "42.077"
+            ]
+          },
+          {
+            "Name": "NEAR_START_LAT",
+            "Values": [
+              "42.386"
+            ]
+          },
+          {
+            "Name": "NEAR_START_LON",
+            "Values": [
+              "77.911"
+            ]
+          },
+          {
+            "Name": "FAR_START_LAT",
+            "Values": [
+              "41.873"
+            ]
+          },
+          {
+            "Name": "FAR_START_LON",
+            "Values": [
+              "78.029"
+            ]
+          },
+          {
+            "Name": "FAR_END_LAT",
+            "Values": [
+              "41.767"
+            ]
+          },
+          {
+            "Name": "FAR_END_LON",
+            "Values": [
+              "77.204"
+            ]
+          },
+          {
+            "Name": "NEAR_END_LAT",
+            "Values": [
+              "42.279"
+            ]
+          },
+          {
+            "Name": "NEAR_END_LON",
+            "Values": [
+              "77.079"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_TYPE",
+            "Values": [
+              "FBD"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "FBD"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ALOS PALSAR sensor: High Resolution Observation Mode (dual polarization)"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH+HV"
+            ]
+          },
+          {
+            "Name": "GRANULE_TYPE",
+            "Values": [
+              "ALOS_PALSAR_SCENE"
+            ]
+          },
+          {
+            "Name": "PROCESSING_TYPE",
+            "Values": [
+              "L1.1"
+            ]
+          },
+          {
+            "Name": "PROCESSING_DESCRIPTION",
+            "Values": [
+              "ALOS PALSAR Level 1.1 processing level. Single-Look Complex (SLC) equally spaced on slant range.  Product generated for all non-SCANSAR data.  SLC generated and edited for each polarization of multi-polarization mode."
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "L1"
+            ]
+          },
+          {
+            "Name": "PROCESSING_TYPE_DISPLAY",
+            "Values": [
+              "Level 1.1 Image"
+            ]
+          },
+          {
+            "Name": "BYTES",
+            "Values": [
+              "1397052370"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 42.279,
+                        "Longitude": 77.079
+                      },
+                      {
+                        "Latitude": 41.767,
+                        "Longitude": 77.204
+                      },
+                      {
+                        "Latitude": 41.873,
+                        "Longitude": 78.029
+                      },
+                      {
+                        "Latitude": 42.386,
+                        "Longitude": 77.911
+                      },
+                      {
+                        "Latitude": 42.279,
+                        "Longitude": 77.079
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2022-01-12T05:56:06.000Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2022-01-12T05:56:06.000Z"
+          }
+        ],
+        "CollectionReference": {
+          "EntryTitle": "ALOS_PALSAR_LEVEL1.1"
+        },
+        "RelatedUrls": [
+          {
+            "Type": "GET DATA",
+            "URL": "https://datapool.asf.alaska.edu/L1.1/A3/ALPSRP244280830-H1.1__A.zip"
+          },
+          {
+            "Type": "GET RELATED VISUALIZATION",
+            "URL": "https://datapool.asf.alaska.edu/BROWSE/A3/EALPSRP244280830.jpg"
+          }
+        ],
+        "DataGranule": {
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "Not provided",
+              "Size": 1332.3329639434814,
+              "SizeUnit": "MB"
+            }
+          ],
+          "DayNightFlag": "Unspecified",
+          "Identifiers": [
+            {
+              "Identifier": "ALPSRP244280830",
+              "IdentifierType": "ProducerGranuleId"
+            }
+          ],
+          "ProductionDateTime": "2010-08-25T17:13:41.804Z"
+        },
+        "Platforms": [
+          {
+            "Instruments": [
+              {
+                "ComposedOf": [
+                  {
+                    "ShortName": "FBD"
+                  }
+                ],
+                "ShortName": "PALSAR"
+              }
+            ],
+            "ShortName": "ALOS"
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    },
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G2208623767-ASF",
+        "revision-id": 2,
+        "native-id": "ALPSRP250990830-L1.1",
+        "collection-concept-id": "C1206485527-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2022-01-31T21:18:14.796Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2010-10-10T17:13:03.047Z",
+            "EndingDateTime": "2010-10-10T17:13:11.617Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 25099
+          }
+        ],
+        "GranuleUR": "ALPSRP250990830-L1.1",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASF_PLATFORM",
+            "Values": [
+              "ALOS"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "830"
+            ]
+          },
+          {
+            "Name": "CENTER_FRAME_ID",
+            "Values": [
+              "830"
+            ]
+          },
+          {
+            "Name": "CENTER_ESA_FRAME",
+            "Values": [
+              "840"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "519"
+            ]
+          },
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "ASCENDING"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "R"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.3"
+            ]
+          },
+          {
+            "Name": "ACQUISITION_DATE",
+            "Values": [
+              "2010-10-10T17:13:03.047Z"
+            ]
+          },
+          {
+            "Name": "PROCESSING_DATE",
+            "Values": [
+              "2022-01-31T21:18:07.000Z"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "77.559"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "42.084"
+            ]
+          },
+          {
+            "Name": "NEAR_START_LAT",
+            "Values": [
+              "42.395"
+            ]
+          },
+          {
+            "Name": "NEAR_START_LON",
+            "Values": [
+              "77.914"
+            ]
+          },
+          {
+            "Name": "FAR_START_LAT",
+            "Values": [
+              "41.88"
+            ]
+          },
+          {
+            "Name": "FAR_START_LON",
+            "Values": [
+              "78.032"
+            ]
+          },
+          {
+            "Name": "FAR_END_LAT",
+            "Values": [
+              "41.772"
+            ]
+          },
+          {
+            "Name": "FAR_END_LON",
+            "Values": [
+              "77.207"
+            ]
+          },
+          {
+            "Name": "NEAR_END_LAT",
+            "Values": [
+              "42.287"
+            ]
+          },
+          {
+            "Name": "NEAR_END_LON",
+            "Values": [
+              "77.082"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_TYPE",
+            "Values": [
+              "FBD"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "FBD"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ALOS PALSAR sensor: High Resolution Observation Mode (dual polarization)"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH+HV"
+            ]
+          },
+          {
+            "Name": "GRANULE_TYPE",
+            "Values": [
+              "ALOS_PALSAR_SCENE"
+            ]
+          },
+          {
+            "Name": "PROCESSING_TYPE",
+            "Values": [
+              "L1.1"
+            ]
+          },
+          {
+            "Name": "PROCESSING_DESCRIPTION",
+            "Values": [
+              "ALOS PALSAR Level 1.1 processing level. Single-Look Complex (SLC) equally spaced on slant range.  Product generated for all non-SCANSAR data.  SLC generated and edited for each polarization of multi-polarization mode."
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "L1"
+            ]
+          },
+          {
+            "Name": "PROCESSING_TYPE_DISPLAY",
+            "Values": [
+              "Level 1.1 Image"
+            ]
+          },
+          {
+            "Name": "BYTES",
+            "Values": [
+              "1397050576"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 42.287,
+                        "Longitude": 77.082
+                      },
+                      {
+                        "Latitude": 41.772,
+                        "Longitude": 77.207
+                      },
+                      {
+                        "Latitude": 41.88,
+                        "Longitude": 78.032
+                      },
+                      {
+                        "Latitude": 42.395,
+                        "Longitude": 77.914
+                      },
+                      {
+                        "Latitude": 42.287,
+                        "Longitude": 77.082
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2022-01-31T21:18:07.000Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2022-01-31T21:18:07.000Z"
+          }
+        ],
+        "CollectionReference": {
+          "EntryTitle": "ALOS_PALSAR_LEVEL1.1"
+        },
+        "RelatedUrls": [
+          {
+            "Type": "GET DATA",
+            "URL": "https://datapool.asf.alaska.edu/L1.1/A3/ALPSRP250990830-H1.1__A.zip"
+          },
+          {
+            "Type": "GET RELATED VISUALIZATION",
+            "URL": "https://datapool.asf.alaska.edu/BROWSE/A3/EALPSRP250990830.jpg"
+          }
+        ],
+        "DataGranule": {
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "Not provided",
+              "Size": 1332.3312530517578,
+              "SizeUnit": "MB"
+            }
+          ],
+          "DayNightFlag": "Unspecified",
+          "Identifiers": [
+            {
+              "Identifier": "ALPSRP250990830",
+              "IdentifierType": "ProducerGranuleId"
+            }
+          ],
+          "ProductionDateTime": "2010-10-10T17:13:03.047Z"
+        },
+        "Platforms": [
+          {
+            "Instruments": [
+              {
+                "ComposedOf": [
+                  {
+                    "ShortName": "FBD"
+                  }
+                ],
+                "ShortName": "PALSAR"
+              }
+            ],
+            "ShortName": "ALOS"
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,4015 @@
+{
+  "retrieved_at": "2026-09-06T02:11:47.415048+00:00",
+  "queries": [
+    {
+      "collection_concept_id": "C3315903479-ASF",
+      "point": "77.37362,41.961825",
+      "temporal": "2023-01-01T00:00:00Z,2025-12-31T23:59:59Z"
+    }
+  ],
+  "collections": [
+    {
+      "meta": {
+        "revision-id": 9,
+        "deleted": false,
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "provider-id": "ASF",
+        "has-combine": false,
+        "user-id": "mharbin",
+        "has-formats": false,
+        "s3-links": [
+          "asf-cumulus-prod-alos2-products"
+        ],
+        "has-spatial-subsetting": false,
+        "native-id": "MMT_ed38faf3-fd45-487e-b63b-e2493e34ce5d",
+        "has-transforms": false,
+        "has-variables": false,
+        "concept-id": "C3315903479-ASF",
+        "revision-date": "2026-07-23T22:55:22.732Z",
+        "has-temporal-subsetting": false,
+        "concept-type": "collection"
+      },
+      "umm": {
+        "DataLanguage": "English",
+        "CollectionCitations": [
+          {
+            "OtherCitationDetails": "JAXA(year of acquisition). ALOS-2 PALSAR-2 ScanSAR [Data set]. Accessed through NASA Alaska Satellite Facility Distributed Active Archive Center.",
+            "OnlineResource": {
+              "Linkage": "https://www.earthdata.nasa.gov/data/catalog/asf-alos2-l1-psr2-1"
+            }
+          }
+        ],
+        "AdditionalAttributes": [
+          {
+            "Name": "PATH_NUMBER",
+            "Description": "The path describes a path the satellite will follow over the earth similar to longitude; each path has an assigned number. Combined with a frame number it identifies a specific piece of ground.  May also be referred to as relative orbit or track number.",
+            "DataType": "INT",
+            "ParameterRangeBegin": "1",
+            "ParameterRangeEnd": "207"
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Description": "SAR imagery is taken with the sensor pointing either left or right of the satellite. ",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Description": "Describes whether the satellite travel direction was ascending towards the north pole, or descending towards the south pole.",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Description": "The general type of active sensor used. Values indicate image resolution: such as standard, fine, wide, scansar wide, SM (strip mode), EW (extra wide). Or indicate resolution + polarization: FBS (fine beam single polarization), FBD (fine beam dual pol). Or atypically the type of product: TOPSAR (high resolution DEM), RPI (repeat pass interferometry), XTI (across track interferometry). Or resolution and product type IW (interferometric wide).",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Description": "The designated frame or scene as defined by various space agencies (ESA, JAXA, CSA) each of which have their own scheme. The frame describes a box over the Earth at a fixed latitude. Combined with a path number it identifies a specific piece of ground.",
+            "DataType": "INT",
+            "ParameterRangeBegin": "0000",
+            "ParameterRangeEnd": "7190"
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Description": "The angle the sensor points away from the satellite's nadir (off to the side). Larger angles correspond to imaging farther away from the satellite.",
+            "DataType": "FLOAT"
+          },
+          {
+            "Name": "POLARIZATION",
+            "Description": "Radar transmissions are polarized, with components normally termed vertical (V) and horizontal (H). Vertical means that the electric vector is in the plane of incidence; horizontal means the electric vector is perpendicular to the plane of incidence.",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Description": "Text that describes the beam mode.",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Description": "Indicates how much processing has been done to the data: L1, L1.0 unprocessed; L1.1 single look complex; L1, L1.5 amplitude image; L2, L2.2 terrain corrected image.",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "OPERATIONAL_MODE",
+            "Description": "Indicates the general SAR mode (ex. Spotlight, StripMap, ScanSAR) that was used for the observation.  ",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "OPERATIONAL_MODE_DESC",
+            "Description": "Text that describes the operational mode.",
+            "DataType": "STRING"
+          },
+          {
+            "Name": "SV_POSITION",
+            "Description": "Satellite position vector in fixed earth coordinates. Comma-separated list of three numbers.",
+            "DataType": "STRING",
+            "ParameterUnitsOfMeasure": "km"
+          },
+          {
+            "Name": "SV_VELOCITY",
+            "Description": "Satellite velocity vector in fixed earth coordinates. Comma-separated list of three numbers.",
+            "DataType": "STRING",
+            "ParameterUnitsOfMeasure": "km/s"
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Description": "Latitude of the center of the scene or frame.",
+            "DataType": "FLOAT"
+          },
+          {
+            "Name": "CENTER_LON",
+            "Description": "Longitude of the center of the scene or frame.",
+            "DataType": "FLOAT"
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "BoundingRectangles": [
+                {
+                  "EastBoundingCoordinate": 180,
+                  "NorthBoundingCoordinate": 90,
+                  "SouthBoundingCoordinate": -90,
+                  "WestBoundingCoordinate": -180
+                }
+              ],
+              "CoordinateSystem": "CARTESIAN"
+            }
+          },
+          "GranuleSpatialRepresentation": "CARTESIAN",
+          "SpatialCoverageType": "HORIZONTAL"
+        },
+        "CollectionProgress": "ACTIVE",
+        "DataMaturity": "Validated",
+        "StandardProduct": false,
+        "ScienceKeywords": [
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "TECTONICS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "SOLID EARTH",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "BIOSPHERE",
+            "Term": "ECOSYSTEMS",
+            "VariableLevel1": "TERRESTRIAL ECOSYSTEMS",
+            "VariableLevel2": "FORESTS"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "LAND SURFACE",
+            "Term": "GEOMORPHIC LANDFORMS/PROCESSES"
+          },
+          {
+            "Category": "EARTH SCIENCE",
+            "Topic": "CRYOSPHERE",
+            "Term": "SEA ICE"
+          }
+        ],
+        "TemporalExtents": [
+          {
+            "RangeDateTimes": [
+              {
+                "BeginningDateTime": "2014-08-01T00:00:00.000Z"
+              }
+            ],
+            "EndsAtPresentFlag": true
+          }
+        ],
+        "ProcessingLevel": {
+          "Id": "1"
+        },
+        "DOI": {
+          "MissingReason": "Unknown"
+        },
+        "ShortName": "ALOS2_L1_PSR2",
+        "EntryTitle": "ALOS-2 PALSAR-2 Level 1 ScanSAR Product",
+        "DirectDistributionInformation": {
+          "S3BucketAndObjectPrefixNames": [
+            "asf-cumulus-prod-alos2-products"
+          ],
+          "Region": "us-west-2",
+          "S3CredentialsAPIEndpoint": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+          "S3CredentialsAPIDocumentationURL": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentialsREADME"
+        },
+        "MetadataLanguage": "English",
+        "RelatedUrls": [
+          {
+            "Description": "ASF data search and download interface",
+            "URLContentType": "DistributionURL",
+            "Type": "GET DATA",
+            "Subtype": "VERTEX",
+            "URL": "https://search.asf.alaska.edu/"
+          },
+          {
+            "Description": "Information about ALOS-2 mission maintained by JAXA.",
+            "URLContentType": "CollectionURL",
+            "Type": "PROJECT HOME PAGE",
+            "URL": "https://www.eorc.jaxa.jp/ALOS/en/alos-2/a2_about_e.htm"
+          },
+          {
+            "Description": "Web page for downloading ALOS-2/PALSAR-2 product format description.",
+            "URLContentType": "PublicationURL",
+            "Type": "VIEW RELATED INFORMATION",
+            "Subtype": "DATA PRODUCT SPECIFICATION",
+            "URL": "https://www.eorc.jaxa.jp/ALOS/en/alos-2/datause/a2_format_e.htm"
+          },
+          {
+            "Description": "JAXA/EORC are regularly conducting the calibration and validation of the PALSAR-2 and its standard products using the data over the calibration sites in the world. This page reports evaluation results of the PALSAR-2 standard products and radiometric calibration factors to convert digital number to backscatter value.",
+            "URLContentType": "PublicationURL",
+            "Type": "VIEW RELATED INFORMATION",
+            "Subtype": "INSTRUMENT/SENSOR CALIBRATION DOCUMENTATION",
+            "URL": "https://www.eorc.jaxa.jp/ALOS/en/alos-2/a2_calval_e.htm"
+          },
+          {
+            "URLContentType": "DistributionURL",
+            "Type": "GET DATA",
+            "Subtype": "Earthdata Search",
+            "URL": "https://search.earthdata.nasa.gov/search/granules?p=C3315903479-ASF",
+            "Description": "Search and download data granules using NASA Earthdata Search interface."
+          }
+        ],
+        "DataDates": [
+          {
+            "Type": "CREATE",
+            "Date": "2024-12-04T00:00:00.000Z"
+          },
+          {
+            "Type": "UPDATE",
+            "Date": "2024-12-04T00:00:00.000Z"
+          }
+        ],
+        "Abstract": "The Advanced Land Observing Satellite-2 (ALOS-2), launched May 14, 2014, is a follow-on mission to ALOS. ALOS-2 features an imaging microwave radar, PALSAR-2 (Phased Array type L-band Synthetic Aperture Radar-2). With a wider range of observation modes PALSAR-2 improves on its predecessor PALSAR (which flew onboard ALOS). PALSAR-2 observes in the L-band, specifically 1257.5 MHz which is adjustable by ± 21 MHz. ScanSAR mode provides a spatial resolution of 60 m and 100 m for a swath of 490 km and 350 km respectively. Stripmap mode provides a resolution of 10 m, 6 m, and 3 m for a swath of 70 km, 70 km, and 50 km respectively. Spotlight mode provides a resolution of 1 m x 3 m for a swath of 25 km x 25 km. ALOS-2 also decreased the revisit time of its predecessor from 46 days to 14 days. ALOS-2 also has the ability to look either to the right or the left.\n\nThis collection provides open access to ScanSAR mode data acquired by ALOS-2. Recently acquired data are not included but are added when released for open access by JAXA. Although the ScanSAR mode has been acquired globally, the collection currently contains only partial global coverage, but coverage is increasing as data become available. \n\nProducts have been processed by JAXA as Level 1.1, such that range and single look azimuth compressed data is represented by complex I and Q channels to preserve the magnitude and phase information. The range coordinate is in slant range. The image is focused onto zero Doppler direction, and an image file is generated per each scan for ScanSAR mode. In addition the full aperture processing method was used to generate the products. With the full aperture method, range compression and one look azimuth compression are performed for the data whose gaps between neighboring bursts in a sub swath are filled with zeroes, this processing is performed for each scan and each polarization. Granules in this collection are distributed as a zip and are quite large, with the majority being 28GB (single polarization) or 56GB (dual polarization).",
+        "Version": "1",
+        "UseConstraints": {
+          "EULAIdentifiers": [
+            "1b454cfb-c298-4072-ae3c-3c133ce810c8"
+          ],
+          "LicenseText": "  ALOS/PALSAR/AVNIR-2 and ALOS-2 ScanSAR data products usage conditions\n\n(i) JAXA does not guarantee any specific quality and the timely provision of the ALOS/PALSAR/AVNIR-2 and ALOS-2 ScanSAR data products and shall not be liable for any damage caused by using them.\n\n(ii) The intellectual property rights, including but not limited to copyrights, of the ALOS/PALSAR/AVNIR-2 and ALOS-2 ScanSAR data Products belong to JAXA.\n\n(iii) The user shall retain the ownership of value-added products (modified products with high-level processing which are irreversible to standard data. High-level data processing includes data analysis or combining multiple- ALOS/PALSAR/AVNIR-2 and ALOS-2 ScanSAR data Product, image processing based on external information, and physical quantity conversion).\n\n(iv) When the user publish and/or redistribute their-generated value-added products based on the  ALOS/PALSAR/AVNIR-2 and ALOS-2 ScanSAR data Product, users will indicate, “the original ALOS/PALSAR/AVNIR-2 and ALOS-2 ScanSAR data products are provided by JAXA”.\n\n(v) When the user intends to publish the results directly using or indirectly based on the ALOS/PALSAR/AVNIR-2 and ALOS-2 ScanSAR data products, the user will indicate owner of the Data Products as “©JAXA [year of acquisition]. All rights reserved”.",
+          "FreeAndOpenData": true
+        },
+        "CollectionDataType": "SCIENCE_QUALITY",
+        "DataCenters": [
+          {
+            "Roles": [
+              "ARCHIVER",
+              "DISTRIBUTOR"
+            ],
+            "ContactInformation": {
+              "RelatedUrls": [
+                {
+                  "URL": "https://www.asf.alaska.edu/",
+                  "URLContentType": "DataCenterURL",
+                  "Type": "HOME PAGE",
+                  "Description": "Home page for the Alaska Satellite Facility"
+                }
+              ],
+              "ContactMechanisms": [
+                {
+                  "Type": "Email",
+                  "Value": "uso@asf.alaska.edu"
+                }
+              ]
+            },
+            "ShortName": "ASF",
+            "LongName": "Alaska Satellite Facility"
+          },
+          {
+            "Roles": [
+              "PROCESSOR"
+            ],
+            "ContactInformation": {
+              "RelatedUrls": [
+                {
+                  "URL": "http://www.eorc.jaxa.jp/en/index.html",
+                  "URLContentType": "DataCenterURL",
+                  "Type": "HOME PAGE",
+                  "Description": "Home page for the Earth Observation Research Center"
+                }
+              ]
+            },
+            "ShortName": "JP/JAXA/EORC",
+            "LongName": "Earth Observation Research Center, Japan Aerospace Exploration Agency, Japan"
+          }
+        ],
+        "Platforms": [
+          {
+            "Instruments": [
+              {
+                "Characteristics": [
+                  {
+                    "Name": "LookDirection",
+                    "Description": "Direction the sensor is pointed, SAR imagery is taken with the sensor pointing either left or right of the satellite.",
+                    "Value": "LEFT or RIGHT",
+                    "Unit": "Not Applicable",
+                    "DataType": "STRING"
+                  }
+                ],
+                "ShortName": "PALSAR-2",
+                "LongName": "Phased Array type L-band Synthetic Aperture Radar 2"
+              }
+            ],
+            "Type": "Earth Observation Satellites",
+            "ShortName": "ALOS-2",
+            "LongName": "Advanced Land Observing Satellite-2"
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/collection/v1.18.6",
+          "Name": "UMM-C",
+          "Version": "1.18.6"
+        },
+        "ArchiveAndDistributionInformation": {
+          "FileArchiveInformation": [
+            {
+              "Format": "ZIP"
+            }
+          ],
+          "FileDistributionInformation": [
+            {
+              "Format": "ZIP"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "items": [
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G4052865580-ASF",
+        "revision-id": 1,
+        "native-id": "ALOS2496750800-230804-WBDR1.1__A",
+        "collection-concept-id": "C3315903479-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2026-02-26T00:14:18.251Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2023-08-04T18:49:02Z",
+            "EndingDateTime": "2023-08-04T18:49:54Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 49675
+          }
+        ],
+        "GranuleUR": "ALOS2496750800-230804-WBDR1.1__A",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "ASCENDING"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "WBD"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ScanSAR nominal [14MHz] mode Dual polarization"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "40.553"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "76.175"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "800"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "RIGHT"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.9"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE",
+            "Values": [
+              "WD1"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE_DESC",
+            "Values": [
+              "ScanSAR1 (Observation width 350km/resolution 100m)"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "161"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH",
+              "HV"
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "1.1"
+            ]
+          },
+          {
+            "Name": "SV_POSITION",
+            "Values": [
+              "1764.883463",
+              "5106.024499",
+              "4460.242468"
+            ]
+          },
+          {
+            "Name": "SV_VELOCITY",
+            "Values": [
+              "0.100011",
+              "-5.042971",
+              "5.717392"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 38.673,
+                        "Longitude": 74.5
+                      },
+                      {
+                        "Latitude": 39.221,
+                        "Longitude": 78.535
+                      },
+                      {
+                        "Latitude": 42.389,
+                        "Longitude": 77.92
+                      },
+                      {
+                        "Latitude": 41.843,
+                        "Longitude": 73.686
+                      },
+                      {
+                        "Latitude": 38.673,
+                        "Longitude": 74.5
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2026-02-26T00:14:15Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2026-02-26T00:14:15Z"
+          }
+        ],
+        "CollectionReference": {
+          "ShortName": "ALOS2_L1_PSR2",
+          "Version": "1"
+        },
+        "RelatedUrls": [
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/L1.1/ALOS2/ALOS2496750800-230804-WBDR1.1__A.zip",
+            "Type": "GET DATA",
+            "Description": "Download ALOS2496750800-230804-WBDR1.1__A.zip"
+          },
+          {
+            "URL": "s3://asf-cumulus-prod-alos2-products/ALOS2496750800-230804-WBDR1.1__A.zip",
+            "Type": "GET DATA VIA DIRECT ACCESS",
+            "Description": "This link provides direct download access via S3 to ALOS2496750800-230804-WBDR1.1__A.zip"
+          },
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+            "Type": "VIEW RELATED INFORMATION",
+            "Description": "S3 credentials endpoint for direct in-region bucket access"
+          }
+        ],
+        "DataGranule": {
+          "DayNightFlag": "Unspecified",
+          "ProductionDateTime": "2023-09-29T01:18:28Z",
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "ALOS2496750800-230804-WBDR1.1__A.zip",
+              "SizeInBytes": 60880842341,
+              "Format": "ZIP",
+              "Checksum": {
+                "Value": "fef1a8477470910f655330c99c6395ae",
+                "Algorithm": "MD5"
+              }
+            }
+          ],
+          "Identifiers": [
+            {
+              "IdentifierType": "ProducerGranuleId",
+              "Identifier": "ALOS2496750800-230804"
+            }
+          ]
+        },
+        "Platforms": [
+          {
+            "ShortName": "ALOS-2",
+            "Instruments": [
+              {
+                "ShortName": "PALSAR-2",
+                "Characteristics": [
+                  {
+                    "Name": "LookDirection",
+                    "Value": "RIGHT"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    },
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G4052866017-ASF",
+        "revision-id": 1,
+        "native-id": "ALOS2496750850-230804-WBDR1.1__A",
+        "collection-concept-id": "C3315903479-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2026-02-26T00:14:31.079Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2023-08-04T18:49:43Z",
+            "EndingDateTime": "2023-08-04T18:50:35Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 49675
+          }
+        ],
+        "GranuleUR": "ALOS2496750850-230804-WBDR1.1__A",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "ASCENDING"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "WBD"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ScanSAR nominal [14MHz] mode Dual polarization"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "43.023"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "75.608"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "850"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "RIGHT"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.9"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE",
+            "Values": [
+              "WD1"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE_DESC",
+            "Values": [
+              "ScanSAR1 (Observation width 350km/resolution 100m)"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "161"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH",
+              "HV"
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "1.1"
+            ]
+          },
+          {
+            "Name": "SV_POSITION",
+            "Values": [
+              "1766.652371",
+              "4896.924891",
+              "4687.573804"
+            ]
+          },
+          {
+            "Name": "SV_VELOCITY",
+            "Values": [
+              "-0.012937",
+              "-5.276766",
+              "5.502256"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 41.143,
+                        "Longitude": 73.87
+                      },
+                      {
+                        "Latitude": 41.69,
+                        "Longitude": 78.057
+                      },
+                      {
+                        "Latitude": 44.856,
+                        "Longitude": 77.43
+                      },
+                      {
+                        "Latitude": 44.31,
+                        "Longitude": 73.017
+                      },
+                      {
+                        "Latitude": 41.143,
+                        "Longitude": 73.87
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2026-02-26T00:14:28Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2026-02-26T00:14:28Z"
+          }
+        ],
+        "CollectionReference": {
+          "ShortName": "ALOS2_L1_PSR2",
+          "Version": "1"
+        },
+        "RelatedUrls": [
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/L1.1/ALOS2/ALOS2496750850-230804-WBDR1.1__A.zip",
+            "Type": "GET DATA",
+            "Description": "Download ALOS2496750850-230804-WBDR1.1__A.zip"
+          },
+          {
+            "URL": "s3://asf-cumulus-prod-alos2-products/ALOS2496750850-230804-WBDR1.1__A.zip",
+            "Type": "GET DATA VIA DIRECT ACCESS",
+            "Description": "This link provides direct download access via S3 to ALOS2496750850-230804-WBDR1.1__A.zip"
+          },
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+            "Type": "VIEW RELATED INFORMATION",
+            "Description": "S3 credentials endpoint for direct in-region bucket access"
+          }
+        ],
+        "DataGranule": {
+          "DayNightFlag": "Unspecified",
+          "ProductionDateTime": "2023-09-29T01:19:48Z",
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "ALOS2496750850-230804-WBDR1.1__A.zip",
+              "SizeInBytes": 61074375177,
+              "Format": "ZIP",
+              "Checksum": {
+                "Value": "a083b4814af97e543c3e163c8c7a424b",
+                "Algorithm": "MD5"
+              }
+            }
+          ],
+          "Identifiers": [
+            {
+              "IdentifierType": "ProducerGranuleId",
+              "Identifier": "ALOS2496750850-230804"
+            }
+          ]
+        },
+        "Platforms": [
+          {
+            "ShortName": "ALOS-2",
+            "Instruments": [
+              {
+                "ShortName": "PALSAR-2",
+                "Characteristics": [
+                  {
+                    "Name": "LookDirection",
+                    "Value": "RIGHT"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    },
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G4053209892-ASF",
+        "revision-id": 1,
+        "native-id": "ALOS2498080800-230813-WBDR1.1__A",
+        "collection-concept-id": "C3315903479-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2026-02-26T02:23:22.082Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2023-08-13T18:42:05Z",
+            "EndingDateTime": "2023-08-13T18:42:57Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 49808
+          }
+        ],
+        "GranuleUR": "ALOS2498080800-230813-WBDR1.1__A",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "ASCENDING"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "WBD"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ScanSAR nominal [14MHz] mode Dual polarization"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "40.553"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "77.914"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "800"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "RIGHT"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.9"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE",
+            "Values": [
+              "WD1"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE_DESC",
+            "Values": [
+              "ScanSAR1 (Observation width 350km/resolution 100m)"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "160"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH",
+              "HV"
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "1.1"
+            ]
+          },
+          {
+            "Name": "SV_POSITION",
+            "Values": [
+              "1609.135466",
+              "5157.237086",
+              "4460.247503"
+            ]
+          },
+          {
+            "Name": "SV_VELOCITY",
+            "Values": [
+              "0.253013",
+              "-5.037613",
+              "5.717378"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 38.673,
+                        "Longitude": 76.239
+                      },
+                      {
+                        "Latitude": 39.221,
+                        "Longitude": 80.274
+                      },
+                      {
+                        "Latitude": 42.389,
+                        "Longitude": 79.659
+                      },
+                      {
+                        "Latitude": 41.843,
+                        "Longitude": 75.425
+                      },
+                      {
+                        "Latitude": 38.673,
+                        "Longitude": 76.239
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2026-02-26T02:23:19Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2026-02-26T02:23:19Z"
+          }
+        ],
+        "CollectionReference": {
+          "ShortName": "ALOS2_L1_PSR2",
+          "Version": "1"
+        },
+        "RelatedUrls": [
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/L1.1/ALOS2/ALOS2498080800-230813-WBDR1.1__A.zip",
+            "Type": "GET DATA",
+            "Description": "Download ALOS2498080800-230813-WBDR1.1__A.zip"
+          },
+          {
+            "URL": "s3://asf-cumulus-prod-alos2-products/ALOS2498080800-230813-WBDR1.1__A.zip",
+            "Type": "GET DATA VIA DIRECT ACCESS",
+            "Description": "This link provides direct download access via S3 to ALOS2498080800-230813-WBDR1.1__A.zip"
+          },
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+            "Type": "VIEW RELATED INFORMATION",
+            "Description": "S3 credentials endpoint for direct in-region bucket access"
+          }
+        ],
+        "DataGranule": {
+          "DayNightFlag": "Unspecified",
+          "ProductionDateTime": "2023-09-29T05:49:05Z",
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "ALOS2498080800-230813-WBDR1.1__A.zip",
+              "SizeInBytes": 60880818515,
+              "Format": "ZIP",
+              "Checksum": {
+                "Value": "06e8b4ce0155e568a00efea134e26f7b",
+                "Algorithm": "MD5"
+              }
+            }
+          ],
+          "Identifiers": [
+            {
+              "IdentifierType": "ProducerGranuleId",
+              "Identifier": "ALOS2498080800-230813"
+            }
+          ]
+        },
+        "Platforms": [
+          {
+            "ShortName": "ALOS-2",
+            "Instruments": [
+              {
+                "ShortName": "PALSAR-2",
+                "Characteristics": [
+                  {
+                    "Name": "LookDirection",
+                    "Value": "RIGHT"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    },
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G4053212168-ASF",
+        "revision-id": 1,
+        "native-id": "ALOS2498080850-230813-WBDR1.1__A",
+        "collection-concept-id": "C3315903479-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2026-02-26T02:24:29.751Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2023-08-13T18:42:45Z",
+            "EndingDateTime": "2023-08-13T18:43:37Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 49808
+          }
+        ],
+        "GranuleUR": "ALOS2498080850-230813-WBDR1.1__A",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "ASCENDING"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "WBD"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ScanSAR nominal [14MHz] mode Dual polarization"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "43.023"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "77.347"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "850"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "RIGHT"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.9"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE",
+            "Values": [
+              "WD1"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE_DESC",
+            "Values": [
+              "ScanSAR1 (Observation width 350km/resolution 100m)"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "160"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH",
+              "HV"
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "1.1"
+            ]
+          },
+          {
+            "Name": "SV_POSITION",
+            "Values": [
+              "1617.249469",
+              "4948.286724",
+              "4687.579054"
+            ]
+          },
+          {
+            "Name": "SV_VELOCITY",
+            "Values": [
+              "0.147211",
+              "-5.274729",
+              "5.502241"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 41.143,
+                        "Longitude": 75.609
+                      },
+                      {
+                        "Latitude": 41.69,
+                        "Longitude": 79.796
+                      },
+                      {
+                        "Latitude": 44.856,
+                        "Longitude": 79.169
+                      },
+                      {
+                        "Latitude": 44.31,
+                        "Longitude": 74.756
+                      },
+                      {
+                        "Latitude": 41.143,
+                        "Longitude": 75.609
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2026-02-26T02:24:27Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2026-02-26T02:24:27Z"
+          }
+        ],
+        "CollectionReference": {
+          "ShortName": "ALOS2_L1_PSR2",
+          "Version": "1"
+        },
+        "RelatedUrls": [
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/L1.1/ALOS2/ALOS2498080850-230813-WBDR1.1__A.zip",
+            "Type": "GET DATA",
+            "Description": "Download ALOS2498080850-230813-WBDR1.1__A.zip"
+          },
+          {
+            "URL": "s3://asf-cumulus-prod-alos2-products/ALOS2498080850-230813-WBDR1.1__A.zip",
+            "Type": "GET DATA VIA DIRECT ACCESS",
+            "Description": "This link provides direct download access via S3 to ALOS2498080850-230813-WBDR1.1__A.zip"
+          },
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+            "Type": "VIEW RELATED INFORMATION",
+            "Description": "S3 credentials endpoint for direct in-region bucket access"
+          }
+        ],
+        "DataGranule": {
+          "DayNightFlag": "Unspecified",
+          "ProductionDateTime": "2023-09-29T05:50:06Z",
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "ALOS2498080850-230813-WBDR1.1__A.zip",
+              "SizeInBytes": 61073064186,
+              "Format": "ZIP",
+              "Checksum": {
+                "Value": "4eb5217cc710c2ed1841ba4b5fe8b038",
+                "Algorithm": "MD5"
+              }
+            }
+          ],
+          "Identifiers": [
+            {
+              "IdentifierType": "ProducerGranuleId",
+              "Identifier": "ALOS2498080850-230813"
+            }
+          ]
+        },
+        "Platforms": [
+          {
+            "ShortName": "ALOS-2",
+            "Instruments": [
+              {
+                "ShortName": "PALSAR-2",
+                "Characteristics": [
+                  {
+                    "Name": "LookDirection",
+                    "Value": "RIGHT"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    },
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G4053985140-ASF",
+        "revision-id": 1,
+        "native-id": "ALOS2501480850-230905-WBSR1.1__A",
+        "collection-concept-id": "C3315903479-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2026-02-26T08:44:27.514Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2023-09-05T18:35:48Z",
+            "EndingDateTime": "2023-09-05T18:36:40Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 50148
+          }
+        ],
+        "GranuleUR": "ALOS2501480850-230905-WBSR1.1__A",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "ASCENDING"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "WBS"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ScanSAR nominal [14MHz] mode Single polarization"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "43.023"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "79.087"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "850"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "RIGHT"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.9"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE",
+            "Values": [
+              "WD1"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE_DESC",
+            "Values": [
+              "ScanSAR1 (Observation width 350km/resolution 100m)"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "159"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH"
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "1.1"
+            ]
+          },
+          {
+            "Name": "SV_POSITION",
+            "Values": [
+              "1466.277458",
+              "4995.112347",
+              "4687.611345"
+            ]
+          },
+          {
+            "Name": "SV_VELOCITY",
+            "Values": [
+              "0.307059",
+              "-5.267795",
+              "5.502227"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 41.144,
+                        "Longitude": 77.349
+                      },
+                      {
+                        "Latitude": 41.69,
+                        "Longitude": 81.536
+                      },
+                      {
+                        "Latitude": 44.856,
+                        "Longitude": 80.91
+                      },
+                      {
+                        "Latitude": 44.31,
+                        "Longitude": 76.496
+                      },
+                      {
+                        "Latitude": 41.144,
+                        "Longitude": 77.349
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2026-02-26T08:44:25Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2026-02-26T08:44:25Z"
+          }
+        ],
+        "CollectionReference": {
+          "ShortName": "ALOS2_L1_PSR2",
+          "Version": "1"
+        },
+        "RelatedUrls": [
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/L1.1/ALOS2/ALOS2501480850-230905-WBSR1.1__A.zip",
+            "Type": "GET DATA",
+            "Description": "Download ALOS2501480850-230905-WBSR1.1__A.zip"
+          },
+          {
+            "URL": "s3://asf-cumulus-prod-alos2-products/ALOS2501480850-230905-WBSR1.1__A.zip",
+            "Type": "GET DATA VIA DIRECT ACCESS",
+            "Description": "This link provides direct download access via S3 to ALOS2501480850-230905-WBSR1.1__A.zip"
+          },
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+            "Type": "VIEW RELATED INFORMATION",
+            "Description": "S3 credentials endpoint for direct in-region bucket access"
+          }
+        ],
+        "DataGranule": {
+          "DayNightFlag": "Unspecified",
+          "ProductionDateTime": "2023-10-30T04:12:53Z",
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "ALOS2501480850-230905-WBSR1.1__A.zip",
+              "SizeInBytes": 30512767323,
+              "Format": "ZIP",
+              "Checksum": {
+                "Value": "f0ad6621aa3ad6479e7d6630bde6fcdb",
+                "Algorithm": "MD5"
+              }
+            }
+          ],
+          "Identifiers": [
+            {
+              "IdentifierType": "ProducerGranuleId",
+              "Identifier": "ALOS2501480850-230905"
+            }
+          ]
+        },
+        "Platforms": [
+          {
+            "ShortName": "ALOS-2",
+            "Instruments": [
+              {
+                "ShortName": "PALSAR-2",
+                "Characteristics": [
+                  {
+                    "Name": "LookDirection",
+                    "Value": "RIGHT"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    },
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G4054212319-ASF",
+        "revision-id": 1,
+        "native-id": "ALOS2502960800-230915-WBSR1.1__A",
+        "collection-concept-id": "C3315903479-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2026-02-26T10:26:53.870Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2023-09-15T18:49:02Z",
+            "EndingDateTime": "2023-09-15T18:49:54Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 50296
+          }
+        ],
+        "GranuleUR": "ALOS2502960800-230915-WBSR1.1__A",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "ASCENDING"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "WBS"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ScanSAR nominal [14MHz] mode Single polarization"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "40.553"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "76.175"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "800"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "RIGHT"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.9"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE",
+            "Values": [
+              "WD1"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE_DESC",
+            "Values": [
+              "ScanSAR1 (Observation width 350km/resolution 100m)"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "161"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH"
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "1.1"
+            ]
+          },
+          {
+            "Name": "SV_POSITION",
+            "Values": [
+              "1764.895955",
+              "5106.089286",
+              "4460.286999"
+            ]
+          },
+          {
+            "Name": "SV_VELOCITY",
+            "Values": [
+              "0.10008",
+              "-5.042899",
+              "5.717348"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 38.673,
+                        "Longitude": 74.501
+                      },
+                      {
+                        "Latitude": 39.221,
+                        "Longitude": 78.536
+                      },
+                      {
+                        "Latitude": 42.389,
+                        "Longitude": 77.921
+                      },
+                      {
+                        "Latitude": 41.843,
+                        "Longitude": 73.687
+                      },
+                      {
+                        "Latitude": 38.673,
+                        "Longitude": 74.501
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2026-02-26T10:26:51Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2026-02-26T10:26:51Z"
+          }
+        ],
+        "CollectionReference": {
+          "ShortName": "ALOS2_L1_PSR2",
+          "Version": "1"
+        },
+        "RelatedUrls": [
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/L1.1/ALOS2/ALOS2502960800-230915-WBSR1.1__A.zip",
+            "Type": "GET DATA",
+            "Description": "Download ALOS2502960800-230915-WBSR1.1__A.zip"
+          },
+          {
+            "URL": "s3://asf-cumulus-prod-alos2-products/ALOS2502960800-230915-WBSR1.1__A.zip",
+            "Type": "GET DATA VIA DIRECT ACCESS",
+            "Description": "This link provides direct download access via S3 to ALOS2502960800-230915-WBSR1.1__A.zip"
+          },
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+            "Type": "VIEW RELATED INFORMATION",
+            "Description": "S3 credentials endpoint for direct in-region bucket access"
+          }
+        ],
+        "DataGranule": {
+          "DayNightFlag": "Unspecified",
+          "ProductionDateTime": "2023-10-30T14:12:03Z",
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "ALOS2502960800-230915-WBSR1.1__A.zip",
+              "SizeInBytes": 30471885311,
+              "Format": "ZIP",
+              "Checksum": {
+                "Value": "e3df273162ca524710a8992e6d4abd36",
+                "Algorithm": "MD5"
+              }
+            }
+          ],
+          "Identifiers": [
+            {
+              "IdentifierType": "ProducerGranuleId",
+              "Identifier": "ALOS2502960800-230915"
+            }
+          ]
+        },
+        "Platforms": [
+          {
+            "ShortName": "ALOS-2",
+            "Instruments": [
+              {
+                "ShortName": "PALSAR-2",
+                "Characteristics": [
+                  {
+                    "Name": "LookDirection",
+                    "Value": "RIGHT"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    },
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G4054211277-ASF",
+        "revision-id": 1,
+        "native-id": "ALOS2502960850-230915-WBSR1.1__A",
+        "collection-concept-id": "C3315903479-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2026-02-26T10:26:40.491Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2023-09-15T18:49:43Z",
+            "EndingDateTime": "2023-09-15T18:50:35Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 50296
+          }
+        ],
+        "GranuleUR": "ALOS2502960850-230915-WBSR1.1__A",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "ASCENDING"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "WBS"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ScanSAR nominal [14MHz] mode Single polarization"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "43.023"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "75.609"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "850"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "RIGHT"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.9"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE",
+            "Values": [
+              "WD1"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE_DESC",
+            "Values": [
+              "ScanSAR1 (Observation width 350km/resolution 100m)"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "161"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH"
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "1.1"
+            ]
+          },
+          {
+            "Name": "SV_POSITION",
+            "Values": [
+              "1766.667689",
+              "4896.988272",
+              "4687.621205"
+            ]
+          },
+          {
+            "Name": "SV_VELOCITY",
+            "Values": [
+              "-0.012868",
+              "-5.276695",
+              "5.502212"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 41.143,
+                        "Longitude": 73.87
+                      },
+                      {
+                        "Latitude": 41.69,
+                        "Longitude": 78.058
+                      },
+                      {
+                        "Latitude": 44.856,
+                        "Longitude": 77.431
+                      },
+                      {
+                        "Latitude": 44.31,
+                        "Longitude": 73.017
+                      },
+                      {
+                        "Latitude": 41.143,
+                        "Longitude": 73.87
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2026-02-26T10:26:38Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2026-02-26T10:26:38Z"
+          }
+        ],
+        "CollectionReference": {
+          "ShortName": "ALOS2_L1_PSR2",
+          "Version": "1"
+        },
+        "RelatedUrls": [
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/L1.1/ALOS2/ALOS2502960850-230915-WBSR1.1__A.zip",
+            "Type": "GET DATA",
+            "Description": "Download ALOS2502960850-230915-WBSR1.1__A.zip"
+          },
+          {
+            "URL": "s3://asf-cumulus-prod-alos2-products/ALOS2502960850-230915-WBSR1.1__A.zip",
+            "Type": "GET DATA VIA DIRECT ACCESS",
+            "Description": "This link provides direct download access via S3 to ALOS2502960850-230915-WBSR1.1__A.zip"
+          },
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+            "Type": "VIEW RELATED INFORMATION",
+            "Description": "S3 credentials endpoint for direct in-region bucket access"
+          }
+        ],
+        "DataGranule": {
+          "DayNightFlag": "Unspecified",
+          "ProductionDateTime": "2023-10-30T14:11:40Z",
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "ALOS2502960850-230915-WBSR1.1__A.zip",
+              "SizeInBytes": 30537876414,
+              "Format": "ZIP",
+              "Checksum": {
+                "Value": "b79445e568f2fa9db2d56bc6ccb9972e",
+                "Algorithm": "MD5"
+              }
+            }
+          ],
+          "Identifiers": [
+            {
+              "IdentifierType": "ProducerGranuleId",
+              "Identifier": "ALOS2502960850-230915"
+            }
+          ]
+        },
+        "Platforms": [
+          {
+            "ShortName": "ALOS-2",
+            "Instruments": [
+              {
+                "ShortName": "PALSAR-2",
+                "Characteristics": [
+                  {
+                    "Name": "LookDirection",
+                    "Value": "RIGHT"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    },
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G4054838580-ASF",
+        "revision-id": 1,
+        "native-id": "ALOS2504512750-230926-WBSR1.1__D",
+        "collection-concept-id": "C3315903479-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2026-02-26T14:02:23.978Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2023-09-26T06:51:01Z",
+            "EndingDateTime": "2023-09-26T06:51:53Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 50451
+          }
+        ],
+        "GranuleUR": "ALOS2504512750-230926-WBSR1.1__D",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "DESCENDING"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "WBS"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ScanSAR nominal [14MHz] mode Single polarization"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "43.023"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "78.8"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "2750"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "RIGHT"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.9"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE",
+            "Values": [
+              "WD1"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE_DESC",
+            "Values": [
+              "ScanSAR1 (Observation width 350km/resolution 100m)"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "54"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH"
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "1.1"
+            ]
+          },
+          {
+            "Name": "SV_POSITION",
+            "Values": [
+              "522.144352",
+              "5179.338806",
+              "4687.338944"
+            ]
+          },
+          {
+            "Name": "SV_VELOCITY",
+            "Values": [
+              "2.267872",
+              "4.764707",
+              "-5.502621"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 41.689,
+                        "Longitude": 76.353
+                      },
+                      {
+                        "Latitude": 41.143,
+                        "Longitude": 80.537
+                      },
+                      {
+                        "Latitude": 44.31,
+                        "Longitude": 81.39
+                      },
+                      {
+                        "Latitude": 44.856,
+                        "Longitude": 76.98
+                      },
+                      {
+                        "Latitude": 41.689,
+                        "Longitude": 76.353
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2026-02-26T14:01:07Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2026-02-26T14:01:07Z"
+          }
+        ],
+        "CollectionReference": {
+          "ShortName": "ALOS2_L1_PSR2",
+          "Version": "1"
+        },
+        "RelatedUrls": [
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/L1.1/ALOS2/ALOS2504512750-230926-WBSR1.1__D.zip",
+            "Type": "GET DATA",
+            "Description": "Download ALOS2504512750-230926-WBSR1.1__D.zip"
+          },
+          {
+            "URL": "s3://asf-cumulus-prod-alos2-products/ALOS2504512750-230926-WBSR1.1__D.zip",
+            "Type": "GET DATA VIA DIRECT ACCESS",
+            "Description": "This link provides direct download access via S3 to ALOS2504512750-230926-WBSR1.1__D.zip"
+          },
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+            "Type": "VIEW RELATED INFORMATION",
+            "Description": "S3 credentials endpoint for direct in-region bucket access"
+          }
+        ],
+        "DataGranule": {
+          "DayNightFlag": "Unspecified",
+          "ProductionDateTime": "2023-10-31T00:48:48Z",
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "ALOS2504512750-230926-WBSR1.1__D.zip",
+              "SizeInBytes": 30492967188,
+              "Format": "ZIP",
+              "Checksum": {
+                "Value": "51c8c98dbddf4459037359cab92c9013",
+                "Algorithm": "MD5"
+              }
+            }
+          ],
+          "Identifiers": [
+            {
+              "IdentifierType": "ProducerGranuleId",
+              "Identifier": "ALOS2504512750-230926"
+            }
+          ]
+        },
+        "Platforms": [
+          {
+            "ShortName": "ALOS-2",
+            "Instruments": [
+              {
+                "ShortName": "PALSAR-2",
+                "Characteristics": [
+                  {
+                    "Name": "LookDirection",
+                    "Value": "RIGHT"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    },
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G4054840898-ASF",
+        "revision-id": 1,
+        "native-id": "ALOS2504512800-230926-WBSR1.1__D",
+        "collection-concept-id": "C3315903479-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2026-02-26T14:04:35.883Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2023-09-26T06:51:41Z",
+            "EndingDateTime": "2023-09-26T06:52:33Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 50451
+          }
+        ],
+        "GranuleUR": "ALOS2504512800-230926-WBSR1.1__D",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "DESCENDING"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "WBS"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ScanSAR nominal [14MHz] mode Single polarization"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "40.552"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "78.234"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "2800"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "RIGHT"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.9"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE",
+            "Values": [
+              "WD1"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE_DESC",
+            "Values": [
+              "ScanSAR1 (Observation width 350km/resolution 100m)"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "54"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH"
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "1.1"
+            ]
+          },
+          {
+            "Name": "SV_POSITION",
+            "Values": [
+              "614.0608",
+              "5367.143416",
+              "4460.015148"
+            ]
+          },
+          {
+            "Name": "SV_VELOCITY",
+            "Values": [
+              "2.26874",
+              "4.505062",
+              "-5.717756"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 39.22,
+                        "Longitude": 75.875
+                      },
+                      {
+                        "Latitude": 38.672,
+                        "Longitude": 79.907
+                      },
+                      {
+                        "Latitude": 41.843,
+                        "Longitude": 80.721
+                      },
+                      {
+                        "Latitude": 42.389,
+                        "Longitude": 76.49
+                      },
+                      {
+                        "Latitude": 39.22,
+                        "Longitude": 75.875
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2026-02-26T14:01:55Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2026-02-26T14:01:55Z"
+          }
+        ],
+        "CollectionReference": {
+          "ShortName": "ALOS2_L1_PSR2",
+          "Version": "1"
+        },
+        "RelatedUrls": [
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/L1.1/ALOS2/ALOS2504512800-230926-WBSR1.1__D.zip",
+            "Type": "GET DATA",
+            "Description": "Download ALOS2504512800-230926-WBSR1.1__D.zip"
+          },
+          {
+            "URL": "s3://asf-cumulus-prod-alos2-products/ALOS2504512800-230926-WBSR1.1__D.zip",
+            "Type": "GET DATA VIA DIRECT ACCESS",
+            "Description": "This link provides direct download access via S3 to ALOS2504512800-230926-WBSR1.1__D.zip"
+          },
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+            "Type": "VIEW RELATED INFORMATION",
+            "Description": "S3 credentials endpoint for direct in-region bucket access"
+          }
+        ],
+        "DataGranule": {
+          "DayNightFlag": "Unspecified",
+          "ProductionDateTime": "2023-10-31T00:49:10Z",
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "ALOS2504512800-230926-WBSR1.1__D.zip",
+              "SizeInBytes": 30421030725,
+              "Format": "ZIP",
+              "Checksum": {
+                "Value": "a91332fa8af9e680d13dbf5bbb42a714",
+                "Algorithm": "MD5"
+              }
+            }
+          ],
+          "Identifiers": [
+            {
+              "IdentifierType": "ProducerGranuleId",
+              "Identifier": "ALOS2504512800-230926"
+            }
+          ]
+        },
+        "Platforms": [
+          {
+            "ShortName": "ALOS-2",
+            "Instruments": [
+              {
+                "ShortName": "PALSAR-2",
+                "Characteristics": [
+                  {
+                    "Name": "LookDirection",
+                    "Value": "RIGHT"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    },
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G4055618127-ASF",
+        "revision-id": 1,
+        "native-id": "ALOS2550570800-240802-WBDR1.1__A",
+        "collection-concept-id": "C3315903479-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2026-02-26T22:08:35.334Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2024-08-02T18:49:03Z",
+            "EndingDateTime": "2024-08-02T18:49:55Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 55057
+          }
+        ],
+        "GranuleUR": "ALOS2550570800-240802-WBDR1.1__A",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "ASCENDING"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "WBD"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ScanSAR nominal [14MHz] mode Dual polarization"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "40.553"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "76.174"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "800"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "RIGHT"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.9"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE",
+            "Values": [
+              "WD1"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE_DESC",
+            "Values": [
+              "ScanSAR1 (Observation width 350km/resolution 100m)"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "161"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH",
+              "HV"
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "1.1"
+            ]
+          },
+          {
+            "Name": "SV_POSITION",
+            "Values": [
+              "1764.929855",
+              "5105.989398",
+              "4460.219972"
+            ]
+          },
+          {
+            "Name": "SV_VELOCITY",
+            "Values": [
+              "0.100028",
+              "-5.042994",
+              "5.717408"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 38.673,
+                        "Longitude": 74.5
+                      },
+                      {
+                        "Latitude": 39.221,
+                        "Longitude": 78.534
+                      },
+                      {
+                        "Latitude": 42.389,
+                        "Longitude": 77.919
+                      },
+                      {
+                        "Latitude": 41.843,
+                        "Longitude": 73.685
+                      },
+                      {
+                        "Latitude": 38.673,
+                        "Longitude": 74.5
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2026-02-26T22:08:32Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2026-02-26T22:08:32Z"
+          }
+        ],
+        "CollectionReference": {
+          "ShortName": "ALOS2_L1_PSR2",
+          "Version": "1"
+        },
+        "RelatedUrls": [
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/L1.1/ALOS2/ALOS2550570800-240802-WBDR1.1__A.zip",
+            "Type": "GET DATA",
+            "Description": "Download ALOS2550570800-240802-WBDR1.1__A.zip"
+          },
+          {
+            "URL": "s3://asf-cumulus-prod-alos2-products/ALOS2550570800-240802-WBDR1.1__A.zip",
+            "Type": "GET DATA VIA DIRECT ACCESS",
+            "Description": "This link provides direct download access via S3 to ALOS2550570800-240802-WBDR1.1__A.zip"
+          },
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+            "Type": "VIEW RELATED INFORMATION",
+            "Description": "S3 credentials endpoint for direct in-region bucket access"
+          }
+        ],
+        "DataGranule": {
+          "DayNightFlag": "Unspecified",
+          "ProductionDateTime": "2024-09-27T03:43:58Z",
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "ALOS2550570800-240802-WBDR1.1__A.zip",
+              "SizeInBytes": 60894850201,
+              "Format": "ZIP",
+              "Checksum": {
+                "Value": "963039e17f8956be20cf666d13ed22a9",
+                "Algorithm": "MD5"
+              }
+            }
+          ],
+          "Identifiers": [
+            {
+              "IdentifierType": "ProducerGranuleId",
+              "Identifier": "ALOS2550570800-240802"
+            }
+          ]
+        },
+        "Platforms": [
+          {
+            "ShortName": "ALOS-2",
+            "Instruments": [
+              {
+                "ShortName": "PALSAR-2",
+                "Characteristics": [
+                  {
+                    "Name": "LookDirection",
+                    "Value": "RIGHT"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    },
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G4055993290-ASF",
+        "revision-id": 1,
+        "native-id": "ALOS2553230850-240820-WBDR1.1__A",
+        "collection-concept-id": "C3315903479-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2026-02-27T03:03:51.040Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2024-08-20T18:35:49Z",
+            "EndingDateTime": "2024-08-20T18:36:41Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 55323
+          }
+        ],
+        "GranuleUR": "ALOS2553230850-240820-WBDR1.1__A",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "ASCENDING"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "WBD"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ScanSAR nominal [14MHz] mode Dual polarization"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "43.023"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "79.085"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "850"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "RIGHT"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.9"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE",
+            "Values": [
+              "WD1"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE_DESC",
+            "Values": [
+              "ScanSAR1 (Observation width 350km/resolution 100m)"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "159"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH",
+              "HV"
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "1.1"
+            ]
+          },
+          {
+            "Name": "SV_POSITION",
+            "Values": [
+              "1466.495354",
+              "4995.062444",
+              "4687.593401"
+            ]
+          },
+          {
+            "Name": "SV_VELOCITY",
+            "Values": [
+              "0.307134",
+              "-5.267756",
+              "5.502273"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 41.143,
+                        "Longitude": 77.346
+                      },
+                      {
+                        "Latitude": 41.69,
+                        "Longitude": 81.534
+                      },
+                      {
+                        "Latitude": 44.856,
+                        "Longitude": 80.907
+                      },
+                      {
+                        "Latitude": 44.31,
+                        "Longitude": 76.493
+                      },
+                      {
+                        "Latitude": 41.143,
+                        "Longitude": 77.346
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2026-02-27T03:03:48Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2026-02-27T03:03:48Z"
+          }
+        ],
+        "CollectionReference": {
+          "ShortName": "ALOS2_L1_PSR2",
+          "Version": "1"
+        },
+        "RelatedUrls": [
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/L1.1/ALOS2/ALOS2553230850-240820-WBDR1.1__A.zip",
+            "Type": "GET DATA",
+            "Description": "Download ALOS2553230850-240820-WBDR1.1__A.zip"
+          },
+          {
+            "URL": "s3://asf-cumulus-prod-alos2-products/ALOS2553230850-240820-WBDR1.1__A.zip",
+            "Type": "GET DATA VIA DIRECT ACCESS",
+            "Description": "This link provides direct download access via S3 to ALOS2553230850-240820-WBDR1.1__A.zip"
+          },
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+            "Type": "VIEW RELATED INFORMATION",
+            "Description": "S3 credentials endpoint for direct in-region bucket access"
+          }
+        ],
+        "DataGranule": {
+          "DayNightFlag": "Unspecified",
+          "ProductionDateTime": "2024-09-27T12:30:07Z",
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "ALOS2553230850-240820-WBDR1.1__A.zip",
+              "SizeInBytes": 61022837799,
+              "Format": "ZIP",
+              "Checksum": {
+                "Value": "adeb5657fce197ead1c404cb41610e6e",
+                "Algorithm": "MD5"
+              }
+            }
+          ],
+          "Identifiers": [
+            {
+              "IdentifierType": "ProducerGranuleId",
+              "Identifier": "ALOS2553230850-240820"
+            }
+          ]
+        },
+        "Platforms": [
+          {
+            "ShortName": "ALOS-2",
+            "Instruments": [
+              {
+                "ShortName": "PALSAR-2",
+                "Characteristics": [
+                  {
+                    "Name": "LookDirection",
+                    "Value": "RIGHT"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    },
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G4056532443-ASF",
+        "revision-id": 1,
+        "native-id": "ALOS2556780800-240913-WBSR1.1__A",
+        "collection-concept-id": "C3315903479-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2026-02-27T10:25:36.191Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2024-09-13T18:49:03Z",
+            "EndingDateTime": "2024-09-13T18:49:55Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 55678
+          }
+        ],
+        "GranuleUR": "ALOS2556780800-240913-WBSR1.1__A",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "ASCENDING"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "WBS"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ScanSAR nominal [14MHz] mode Single polarization"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "40.553"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "76.175"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "800"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "RIGHT"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.9"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE",
+            "Values": [
+              "WD1"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE_DESC",
+            "Values": [
+              "ScanSAR1 (Observation width 350km/resolution 100m)"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "161"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH"
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "1.1"
+            ]
+          },
+          {
+            "Name": "SV_POSITION",
+            "Values": [
+              "1764.824507",
+              "5106.043508",
+              "4460.257074"
+            ]
+          },
+          {
+            "Name": "SV_VELOCITY",
+            "Values": [
+              "0.099926",
+              "-5.042879",
+              "5.717411"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 38.673,
+                        "Longitude": 74.501
+                      },
+                      {
+                        "Latitude": 39.221,
+                        "Longitude": 78.535
+                      },
+                      {
+                        "Latitude": 42.389,
+                        "Longitude": 77.921
+                      },
+                      {
+                        "Latitude": 41.843,
+                        "Longitude": 73.687
+                      },
+                      {
+                        "Latitude": 38.673,
+                        "Longitude": 74.501
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2026-02-27T10:25:33Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2026-02-27T10:25:33Z"
+          }
+        ],
+        "CollectionReference": {
+          "ShortName": "ALOS2_L1_PSR2",
+          "Version": "1"
+        },
+        "RelatedUrls": [
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/L1.1/ALOS2/ALOS2556780800-240913-WBSR1.1__A.zip",
+            "Type": "GET DATA",
+            "Description": "Download ALOS2556780800-240913-WBSR1.1__A.zip"
+          },
+          {
+            "URL": "s3://asf-cumulus-prod-alos2-products/ALOS2556780800-240913-WBSR1.1__A.zip",
+            "Type": "GET DATA VIA DIRECT ACCESS",
+            "Description": "This link provides direct download access via S3 to ALOS2556780800-240913-WBSR1.1__A.zip"
+          },
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+            "Type": "VIEW RELATED INFORMATION",
+            "Description": "S3 credentials endpoint for direct in-region bucket access"
+          }
+        ],
+        "DataGranule": {
+          "DayNightFlag": "Unspecified",
+          "ProductionDateTime": "2024-10-19T17:31:38Z",
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "ALOS2556780800-240913-WBSR1.1__A.zip",
+              "SizeInBytes": 30441772993,
+              "Format": "ZIP",
+              "Checksum": {
+                "Value": "f7a23b53d170cf1046514635ff2f1741",
+                "Algorithm": "MD5"
+              }
+            }
+          ],
+          "Identifiers": [
+            {
+              "IdentifierType": "ProducerGranuleId",
+              "Identifier": "ALOS2556780800-240913"
+            }
+          ]
+        },
+        "Platforms": [
+          {
+            "ShortName": "ALOS-2",
+            "Instruments": [
+              {
+                "ShortName": "PALSAR-2",
+                "Characteristics": [
+                  {
+                    "Name": "LookDirection",
+                    "Value": "RIGHT"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    },
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G4056606674-ASF",
+        "revision-id": 1,
+        "native-id": "ALOS2556780850-240913-WBSR1.1__A",
+        "collection-concept-id": "C3315903479-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2026-02-27T10:52:26.701Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2024-09-13T18:49:43Z",
+            "EndingDateTime": "2024-09-13T18:50:35Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 55678
+          }
+        ],
+        "GranuleUR": "ALOS2556780850-240913-WBSR1.1__A",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "ASCENDING"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "WBS"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ScanSAR nominal [14MHz] mode Single polarization"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "43.023"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "75.609"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "850"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "RIGHT"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.9"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE",
+            "Values": [
+              "WD1"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE_DESC",
+            "Values": [
+              "ScanSAR1 (Observation width 350km/resolution 100m)"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "161"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH"
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "1.1"
+            ]
+          },
+          {
+            "Name": "SV_POSITION",
+            "Values": [
+              "1766.590061",
+              "4896.945649",
+              "4687.591223"
+            ]
+          },
+          {
+            "Name": "SV_VELOCITY",
+            "Values": [
+              "-0.013019",
+              "-5.276677",
+              "5.502273"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 41.144,
+                        "Longitude": 73.871
+                      },
+                      {
+                        "Latitude": 41.69,
+                        "Longitude": 78.058
+                      },
+                      {
+                        "Latitude": 44.856,
+                        "Longitude": 77.431
+                      },
+                      {
+                        "Latitude": 44.31,
+                        "Longitude": 73.018
+                      },
+                      {
+                        "Latitude": 41.144,
+                        "Longitude": 73.871
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2026-02-27T10:52:23Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2026-02-27T10:52:23Z"
+          }
+        ],
+        "CollectionReference": {
+          "ShortName": "ALOS2_L1_PSR2",
+          "Version": "1"
+        },
+        "RelatedUrls": [
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/L1.1/ALOS2/ALOS2556780850-240913-WBSR1.1__A.zip",
+            "Type": "GET DATA",
+            "Description": "Download ALOS2556780850-240913-WBSR1.1__A.zip"
+          },
+          {
+            "URL": "s3://asf-cumulus-prod-alos2-products/ALOS2556780850-240913-WBSR1.1__A.zip",
+            "Type": "GET DATA VIA DIRECT ACCESS",
+            "Description": "This link provides direct download access via S3 to ALOS2556780850-240913-WBSR1.1__A.zip"
+          },
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+            "Type": "VIEW RELATED INFORMATION",
+            "Description": "S3 credentials endpoint for direct in-region bucket access"
+          }
+        ],
+        "DataGranule": {
+          "DayNightFlag": "Unspecified",
+          "ProductionDateTime": "2024-10-19T17:33:23Z",
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "ALOS2556780850-240913-WBSR1.1__A.zip",
+              "SizeInBytes": 30537877498,
+              "Format": "ZIP",
+              "Checksum": {
+                "Value": "72348536ff11e5d43307f4bc5076e61e",
+                "Algorithm": "MD5"
+              }
+            }
+          ],
+          "Identifiers": [
+            {
+              "IdentifierType": "ProducerGranuleId",
+              "Identifier": "ALOS2556780850-240913"
+            }
+          ]
+        },
+        "Platforms": [
+          {
+            "ShortName": "ALOS-2",
+            "Instruments": [
+              {
+                "ShortName": "PALSAR-2",
+                "Characteristics": [
+                  {
+                    "Name": "LookDirection",
+                    "Value": "RIGHT"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    },
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G4057092824-ASF",
+        "revision-id": 1,
+        "native-id": "ALOS2558332750-240924-WBSR1.1__D",
+        "collection-concept-id": "C3315903479-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2026-02-27T16:20:14.070Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2024-09-24T06:51:01Z",
+            "EndingDateTime": "2024-09-24T06:51:53Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 55833
+          }
+        ],
+        "GranuleUR": "ALOS2558332750-240924-WBSR1.1__D",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "DESCENDING"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "WBS"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ScanSAR nominal [14MHz] mode Single polarization"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "43.023"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "78.799"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "2750"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "RIGHT"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.9"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE",
+            "Values": [
+              "WD1"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE_DESC",
+            "Values": [
+              "ScanSAR1 (Observation width 350km/resolution 100m)"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "54"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH"
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "1.1"
+            ]
+          },
+          {
+            "Name": "SV_POSITION",
+            "Values": [
+              "522.264103",
+              "5179.299099",
+              "4687.335985"
+            ]
+          },
+          {
+            "Name": "SV_VELOCITY",
+            "Values": [
+              "2.267845",
+              "4.764657",
+              "-5.502691"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 41.689,
+                        "Longitude": 76.352
+                      },
+                      {
+                        "Latitude": 41.143,
+                        "Longitude": 80.536
+                      },
+                      {
+                        "Latitude": 44.31,
+                        "Longitude": 81.389
+                      },
+                      {
+                        "Latitude": 44.856,
+                        "Longitude": 76.978
+                      },
+                      {
+                        "Latitude": 41.689,
+                        "Longitude": 76.352
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2026-02-27T16:20:11Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2026-02-27T16:20:11Z"
+          }
+        ],
+        "CollectionReference": {
+          "ShortName": "ALOS2_L1_PSR2",
+          "Version": "1"
+        },
+        "RelatedUrls": [
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/L1.1/ALOS2/ALOS2558332750-240924-WBSR1.1__D.zip",
+            "Type": "GET DATA",
+            "Description": "Download ALOS2558332750-240924-WBSR1.1__D.zip"
+          },
+          {
+            "URL": "s3://asf-cumulus-prod-alos2-products/ALOS2558332750-240924-WBSR1.1__D.zip",
+            "Type": "GET DATA VIA DIRECT ACCESS",
+            "Description": "This link provides direct download access via S3 to ALOS2558332750-240924-WBSR1.1__D.zip"
+          },
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+            "Type": "VIEW RELATED INFORMATION",
+            "Description": "S3 credentials endpoint for direct in-region bucket access"
+          }
+        ],
+        "DataGranule": {
+          "DayNightFlag": "Unspecified",
+          "ProductionDateTime": "2024-10-20T03:57:54Z",
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "ALOS2558332750-240924-WBSR1.1__D.zip",
+              "SizeInBytes": 30506754838,
+              "Format": "ZIP",
+              "Checksum": {
+                "Value": "879b154861528e410e6b2fcdf5640f7c",
+                "Algorithm": "MD5"
+              }
+            }
+          ],
+          "Identifiers": [
+            {
+              "IdentifierType": "ProducerGranuleId",
+              "Identifier": "ALOS2558332750-240924"
+            }
+          ]
+        },
+        "Platforms": [
+          {
+            "ShortName": "ALOS-2",
+            "Instruments": [
+              {
+                "ShortName": "PALSAR-2",
+                "Characteristics": [
+                  {
+                    "Name": "LookDirection",
+                    "Value": "RIGHT"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    },
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G4057090850-ASF",
+        "revision-id": 1,
+        "native-id": "ALOS2558332800-240924-WBSR1.1__D",
+        "collection-concept-id": "C3315903479-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2026-02-27T16:18:48.958Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2024-09-24T06:51:41Z",
+            "EndingDateTime": "2024-09-24T06:52:33Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 55833
+          }
+        ],
+        "GranuleUR": "ALOS2558332800-240924-WBSR1.1__D",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "DESCENDING"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "WBS"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ScanSAR nominal [14MHz] mode Single polarization"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "40.552"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "78.233"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "2800"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "RIGHT"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.9"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE",
+            "Values": [
+              "WD1"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE_DESC",
+            "Values": [
+              "ScanSAR1 (Observation width 350km/resolution 100m)"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "54"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH"
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "1.1"
+            ]
+          },
+          {
+            "Name": "SV_POSITION",
+            "Values": [
+              "614.178823",
+              "5367.100665",
+              "4460.010591"
+            ]
+          },
+          {
+            "Name": "SV_VELOCITY",
+            "Values": [
+              "2.268707",
+              "4.505013",
+              "-5.717828"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 39.22,
+                        "Longitude": 75.874
+                      },
+                      {
+                        "Latitude": 38.672,
+                        "Longitude": 79.906
+                      },
+                      {
+                        "Latitude": 41.843,
+                        "Longitude": 80.72
+                      },
+                      {
+                        "Latitude": 42.389,
+                        "Longitude": 76.489
+                      },
+                      {
+                        "Latitude": 39.22,
+                        "Longitude": 75.874
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2026-02-27T16:18:46Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2026-02-27T16:18:46Z"
+          }
+        ],
+        "CollectionReference": {
+          "ShortName": "ALOS2_L1_PSR2",
+          "Version": "1"
+        },
+        "RelatedUrls": [
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/L1.1/ALOS2/ALOS2558332800-240924-WBSR1.1__D.zip",
+            "Type": "GET DATA",
+            "Description": "Download ALOS2558332800-240924-WBSR1.1__D.zip"
+          },
+          {
+            "URL": "s3://asf-cumulus-prod-alos2-products/ALOS2558332800-240924-WBSR1.1__D.zip",
+            "Type": "GET DATA VIA DIRECT ACCESS",
+            "Description": "This link provides direct download access via S3 to ALOS2558332800-240924-WBSR1.1__D.zip"
+          },
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+            "Type": "VIEW RELATED INFORMATION",
+            "Description": "S3 credentials endpoint for direct in-region bucket access"
+          }
+        ],
+        "DataGranule": {
+          "DayNightFlag": "Unspecified",
+          "ProductionDateTime": "2024-10-20T03:57:06Z",
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "ALOS2558332800-240924-WBSR1.1__D.zip",
+              "SizeInBytes": 30435115586,
+              "Format": "ZIP",
+              "Checksum": {
+                "Value": "0c99af5bc746c91b01eb786f8faf6fc3",
+                "Algorithm": "MD5"
+              }
+            }
+          ],
+          "Identifiers": [
+            {
+              "IdentifierType": "ProducerGranuleId",
+              "Identifier": "ALOS2558332800-240924"
+            }
+          ]
+        },
+        "Platforms": [
+          {
+            "ShortName": "ALOS-2",
+            "Instruments": [
+              {
+                "ShortName": "PALSAR-2",
+                "Characteristics": [
+                  {
+                    "Name": "LookDirection",
+                    "Value": "RIGHT"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    },
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G4057378724-ASF",
+        "revision-id": 1,
+        "native-id": "ALOS2560180800-241006-WBDR1.1__A",
+        "collection-concept-id": "C3315903479-ASF",
+        "provider-id": "ASF",
+        "format": "application/vnd.nasa.cmr.umm+json",
+        "revision-date": "2026-02-27T19:40:04.098Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2024-10-06T18:42:05Z",
+            "EndingDateTime": "2024-10-06T18:42:57Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 56018
+          }
+        ],
+        "GranuleUR": "ALOS2560180800-241006-WBDR1.1__A",
+        "AdditionalAttributes": [
+          {
+            "Name": "ASCENDING_DESCENDING",
+            "Values": [
+              "ASCENDING"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE",
+            "Values": [
+              "WBD"
+            ]
+          },
+          {
+            "Name": "BEAM_MODE_DESC",
+            "Values": [
+              "ScanSAR nominal [14MHz] mode Dual polarization"
+            ]
+          },
+          {
+            "Name": "CENTER_LAT",
+            "Values": [
+              "40.553"
+            ]
+          },
+          {
+            "Name": "CENTER_LON",
+            "Values": [
+              "77.917"
+            ]
+          },
+          {
+            "Name": "FRAME_NUMBER",
+            "Values": [
+              "800"
+            ]
+          },
+          {
+            "Name": "LOOK_DIRECTION",
+            "Values": [
+              "RIGHT"
+            ]
+          },
+          {
+            "Name": "OFF_NADIR_ANGLE",
+            "Values": [
+              "34.9"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE",
+            "Values": [
+              "WD1"
+            ]
+          },
+          {
+            "Name": "OPERATIONAL_MODE_DESC",
+            "Values": [
+              "ScanSAR1 (Observation width 350km/resolution 100m)"
+            ]
+          },
+          {
+            "Name": "PATH_NUMBER",
+            "Values": [
+              "160"
+            ]
+          },
+          {
+            "Name": "POLARIZATION",
+            "Values": [
+              "HH",
+              "HV"
+            ]
+          },
+          {
+            "Name": "PROCESSING_LEVEL",
+            "Values": [
+              "1.1"
+            ]
+          },
+          {
+            "Name": "SV_POSITION",
+            "Values": [
+              "1608.873255",
+              "5157.317673",
+              "4460.251873"
+            ]
+          },
+          {
+            "Name": "SV_VELOCITY",
+            "Values": [
+              "0.253196",
+              "-5.037545",
+              "5.717376"
+            ]
+          }
+        ],
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Geometry": {
+              "GPolygons": [
+                {
+                  "Boundary": {
+                    "Points": [
+                      {
+                        "Latitude": 38.673,
+                        "Longitude": 76.242
+                      },
+                      {
+                        "Latitude": 39.221,
+                        "Longitude": 80.277
+                      },
+                      {
+                        "Latitude": 42.389,
+                        "Longitude": 79.662
+                      },
+                      {
+                        "Latitude": 41.843,
+                        "Longitude": 75.428
+                      },
+                      {
+                        "Latitude": 38.673,
+                        "Longitude": 76.242
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Type": "Insert",
+            "Date": "2026-02-27T19:40:01Z"
+          },
+          {
+            "Type": "Update",
+            "Date": "2026-02-27T19:40:01Z"
+          }
+        ],
+        "CollectionReference": {
+          "ShortName": "ALOS2_L1_PSR2",
+          "Version": "1"
+        },
+        "RelatedUrls": [
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/L1.1/ALOS2/ALOS2560180800-241006-WBDR1.1__A.zip",
+            "Type": "GET DATA",
+            "Description": "Download ALOS2560180800-241006-WBDR1.1__A.zip"
+          },
+          {
+            "URL": "s3://asf-cumulus-prod-alos2-products/ALOS2560180800-241006-WBDR1.1__A.zip",
+            "Type": "GET DATA VIA DIRECT ACCESS",
+            "Description": "This link provides direct download access via S3 to ALOS2560180800-241006-WBDR1.1__A.zip"
+          },
+          {
+            "URL": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+            "Type": "VIEW RELATED INFORMATION",
+            "Description": "S3 credentials endpoint for direct in-region bucket access"
+          }
+        ],
+        "DataGranule": {
+          "DayNightFlag": "Unspecified",
+          "ProductionDateTime": "2024-10-31T10:46:57Z",
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "ALOS2560180800-241006-WBDR1.1__A.zip",
+              "SizeInBytes": 60918377628,
+              "Format": "ZIP",
+              "Checksum": {
+                "Value": "4fa5e0c0ad6445c396e30cef9ef61cb3",
+                "Algorithm": "MD5"
+              }
+            }
+          ],
+          "Identifiers": [
+            {
+              "IdentifierType": "ProducerGranuleId",
+              "Identifier": "ALOS2560180800-241006"
+            }
+          ]
+        },
+        "Platforms": [
+          {
+            "ShortName": "ALOS-2",
+            "Instruments": [
+              {
+                "ShortName": "PALSAR-2",
+                "Characteristics": [
+                  {
+                    "Name": "LookDirection",
+                    "Value": "RIGHT"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+          "Name": "UMM-G",
+          "Version": "1.6.7"
+        }
+      }
+    }
+  ]
+}
