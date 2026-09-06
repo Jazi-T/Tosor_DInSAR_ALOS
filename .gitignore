@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+*.zip
+*.tar
+*.gz
+*.tif
+*.tiff
+*.img
+*.slc
+*.dim
+*.data/
+data/raw/*
+!data/raw/.gitkeep
+output/interferograms/*
+*.log
+*.tmp

@@ -1,0 +1,1814 @@
+[
+  {
+    "meta": {
+      "concept-type": "granule",
+      "concept-id": "G2102664609-ASF",
+      "revision-id": 2,
+      "native-id": "ALPSRP190600830-L1.1",
+      "collection-concept-id": "C1206485527-ASF",
+      "provider-id": "ASF",
+      "format": "application/vnd.nasa.cmr.umm+json",
+      "revision-date": "2021-08-26T00:58:10.867Z"
+    },
+    "umm": {
+      "TemporalExtent": {
+        "RangeDateTime": {
+          "BeginningDateTime": "2009-08-22T17:15:30.754Z",
+          "EndingDateTime": "2009-08-22T17:15:39.288Z"
+        }
+      },
+      "OrbitCalculatedSpatialDomains": [
+        {
+          "OrbitNumber": 19060
+        }
+      ],
+      "GranuleUR": "ALPSRP190600830-L1.1",
+      "AdditionalAttributes": [
+        {
+          "Name": "ASF_PLATFORM",
+          "Values": [
+            "ALOS"
+          ]
+        },
+        {
+          "Name": "FRAME_NUMBER",
+          "Values": [
+            "830"
+          ]
+        },
+        {
+          "Name": "CENTER_FRAME_ID",
+          "Values": [
+            "830"
+          ]
+        },
+        {
+          "Name": "CENTER_ESA_FRAME",
+          "Values": [
+            "840"
+          ]
+        },
+        {
+          "Name": "PATH_NUMBER",
+          "Values": [
+            "519"
+          ]
+        },
+        {
+          "Name": "ASCENDING_DESCENDING",
+          "Values": [
+            "ASCENDING"
+          ]
+        },
+        {
+          "Name": "LOOK_DIRECTION",
+          "Values": [
+            "R"
+          ]
+        },
+        {
+          "Name": "OFF_NADIR_ANGLE",
+          "Values": [
+            "34.3"
+          ]
+        },
+        {
+          "Name": "ACQUISITION_DATE",
+          "Values": [
+            "2009-08-22T17:15:30.754Z"
+          ]
+        },
+        {
+          "Name": "PROCESSING_DATE",
+          "Values": [
+            "2021-08-26T00:58:03.000Z"
+          ]
+        },
+        {
+          "Name": "CENTER_LON",
+          "Values": [
+            "77.525"
+          ]
+        },
+        {
+          "Name": "CENTER_LAT",
+          "Values": [
+            "42.08"
+          ]
+        },
+        {
+          "Name": "NEAR_START_LAT",
+          "Values": [
+            "42.389"
+          ]
+        },
+        {
+          "Name": "NEAR_START_LON",
+          "Values": [
+            "77.88"
+          ]
+        },
+        {
+          "Name": "FAR_START_LAT",
+          "Values": [
+            "41.877"
+          ]
+        },
+        {
+          "Name": "FAR_START_LON",
+          "Values": [
+            "77.998"
+          ]
+        },
+        {
+          "Name": "FAR_END_LAT",
+          "Values": [
+            "41.769"
+          ]
+        },
+        {
+          "Name": "FAR_END_LON",
+          "Values": [
+            "77.174"
+          ]
+        },
+        {
+          "Name": "NEAR_END_LAT",
+          "Values": [
+            "42.282"
+          ]
+        },
+        {
+          "Name": "NEAR_END_LON",
+          "Values": [
+            "77.048"
+          ]
+        },
+        {
+          "Name": "BEAM_MODE_TYPE",
+          "Values": [
+            "FBD"
+          ]
+        },
+        {
+          "Name": "BEAM_MODE",
+          "Values": [
+            "FBD"
+          ]
+        },
+        {
+          "Name": "BEAM_MODE_DESC",
+          "Values": [
+            "ALOS PALSAR sensor: High Resolution Observation Mode (dual polarization)"
+          ]
+        },
+        {
+          "Name": "POLARIZATION",
+          "Values": [
+            "HH+HV"
+          ]
+        },
+        {
+          "Name": "GRANULE_TYPE",
+          "Values": [
+            "ALOS_PALSAR_SCENE"
+          ]
+        },
+        {
+          "Name": "PROCESSING_TYPE",
+          "Values": [
+            "L1.1"
+          ]
+        },
+        {
+          "Name": "PROCESSING_DESCRIPTION",
+          "Values": [
+            "ALOS PALSAR Level 1.1 processing level. Single-Look Complex (SLC) equally spaced on slant range.  Product generated for all non-SCANSAR data.  SLC generated and edited for each polarization of multi-polarization mode."
+          ]
+        },
+        {
+          "Name": "PROCESSING_LEVEL",
+          "Values": [
+            "L1"
+          ]
+        },
+        {
+          "Name": "PROCESSING_TYPE_DISPLAY",
+          "Values": [
+            "Level 1.1 Image"
+          ]
+        },
+        {
+          "Name": "BYTES",
+          "Values": [
+            "1397043146"
+          ]
+        }
+      ],
+      "SpatialExtent": {
+        "HorizontalSpatialDomain": {
+          "Geometry": {
+            "GPolygons": [
+              {
+                "Boundary": {
+                  "Points": [
+                    {
+                      "Latitude": 42.282,
+                      "Longitude": 77.048
+                    },
+                    {
+                      "Latitude": 41.769,
+                      "Longitude": 77.174
+                    },
+                    {
+                      "Latitude": 41.877,
+                      "Longitude": 77.998
+                    },
+                    {
+                      "Latitude": 42.389,
+                      "Longitude": 77.88
+                    },
+                    {
+                      "Latitude": 42.282,
+                      "Longitude": 77.048
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      "ProviderDates": [
+        {
+          "Type": "Insert",
+          "Date": "2021-08-26T00:58:03.000Z"
+        },
+        {
+          "Type": "Update",
+          "Date": "2021-08-26T00:58:03.000Z"
+        }
+      ],
+      "CollectionReference": {
+        "EntryTitle": "ALOS_PALSAR_LEVEL1.1"
+      },
+      "RelatedUrls": [
+        {
+          "Type": "GET DATA",
+          "URL": "https://datapool.asf.alaska.edu/L1.1/A3/ALPSRP190600830-H1.1__A.zip"
+        },
+        {
+          "Type": "GET RELATED VISUALIZATION",
+          "URL": "https://datapool.asf.alaska.edu/BROWSE/A3/EALPSRP190600830.jpg"
+        }
+      ],
+      "DataGranule": {
+        "ArchiveAndDistributionInformation": [
+          {
+            "Name": "Not provided",
+            "Size": 1332.324167251587,
+            "SizeUnit": "MB"
+          }
+        ],
+        "DayNightFlag": "Unspecified",
+        "Identifiers": [
+          {
+            "Identifier": "ALPSRP190600830",
+            "IdentifierType": "ProducerGranuleId"
+          }
+        ],
+        "ProductionDateTime": "2009-08-22T17:15:30.754Z"
+      },
+      "Platforms": [
+        {
+          "Instruments": [
+            {
+              "ComposedOf": [
+                {
+                  "ShortName": "FBD"
+                }
+              ],
+              "ShortName": "PALSAR"
+            }
+          ],
+          "ShortName": "ALOS"
+        }
+      ],
+      "MetadataSpecification": {
+        "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+        "Name": "UMM-G",
+        "Version": "1.6.7"
+      }
+    }
+  },
+  {
+    "meta": {
+      "concept-type": "granule",
+      "concept-id": "G2171107814-ASF",
+      "revision-id": 1,
+      "native-id": "ALPSRP230860830-L1.1",
+      "collection-concept-id": "C1206485527-ASF",
+      "provider-id": "ASF",
+      "format": "application/vnd.nasa.cmr.umm+json",
+      "revision-date": "2021-11-23T07:35:03.694Z"
+    },
+    "umm": {
+      "TemporalExtent": {
+        "RangeDateTime": {
+          "BeginningDateTime": "2010-05-25T17:14:41.987Z",
+          "EndingDateTime": "2010-05-25T17:14:50.558Z"
+        }
+      },
+      "OrbitCalculatedSpatialDomains": [
+        {
+          "OrbitNumber": 23086
+        }
+      ],
+      "GranuleUR": "ALPSRP230860830-L1.1",
+      "AdditionalAttributes": [
+        {
+          "Name": "ASF_PLATFORM",
+          "Values": [
+            "ALOS"
+          ]
+        },
+        {
+          "Name": "FRAME_NUMBER",
+          "Values": [
+            "830"
+          ]
+        },
+        {
+          "Name": "CENTER_FRAME_ID",
+          "Values": [
+            "830"
+          ]
+        },
+        {
+          "Name": "CENTER_ESA_FRAME",
+          "Values": [
+            "840"
+          ]
+        },
+        {
+          "Name": "PATH_NUMBER",
+          "Values": [
+            "519"
+          ]
+        },
+        {
+          "Name": "ASCENDING_DESCENDING",
+          "Values": [
+            "ASCENDING"
+          ]
+        },
+        {
+          "Name": "LOOK_DIRECTION",
+          "Values": [
+            "R"
+          ]
+        },
+        {
+          "Name": "OFF_NADIR_ANGLE",
+          "Values": [
+            "34.3"
+          ]
+        },
+        {
+          "Name": "ACQUISITION_DATE",
+          "Values": [
+            "2010-05-25T17:14:41.987Z"
+          ]
+        },
+        {
+          "Name": "PROCESSING_DATE",
+          "Values": [
+            "2021-11-23T07:34:56.000Z"
+          ]
+        },
+        {
+          "Name": "CENTER_LON",
+          "Values": [
+            "77.544"
+          ]
+        },
+        {
+          "Name": "CENTER_LAT",
+          "Values": [
+            "42.083"
+          ]
+        },
+        {
+          "Name": "NEAR_START_LAT",
+          "Values": [
+            "42.394"
+          ]
+        },
+        {
+          "Name": "NEAR_START_LON",
+          "Values": [
+            "77.905"
+          ]
+        },
+        {
+          "Name": "FAR_START_LAT",
+          "Values": [
+            "41.88"
+          ]
+        },
+        {
+          "Name": "FAR_START_LON",
+          "Values": [
+            "78.024"
+          ]
+        },
+        {
+          "Name": "FAR_END_LAT",
+          "Values": [
+            "41.77"
+          ]
+        },
+        {
+          "Name": "FAR_END_LON",
+          "Values": [
+            "77.187"
+          ]
+        },
+        {
+          "Name": "NEAR_END_LAT",
+          "Values": [
+            "42.285"
+          ]
+        },
+        {
+          "Name": "NEAR_END_LON",
+          "Values": [
+            "77.062"
+          ]
+        },
+        {
+          "Name": "BEAM_MODE_TYPE",
+          "Values": [
+            "FBD"
+          ]
+        },
+        {
+          "Name": "BEAM_MODE",
+          "Values": [
+            "FBD"
+          ]
+        },
+        {
+          "Name": "BEAM_MODE_DESC",
+          "Values": [
+            "ALOS PALSAR sensor: High Resolution Observation Mode (dual polarization)"
+          ]
+        },
+        {
+          "Name": "POLARIZATION",
+          "Values": [
+            "HH+HV"
+          ]
+        },
+        {
+          "Name": "GRANULE_TYPE",
+          "Values": [
+            "ALOS_PALSAR_SCENE"
+          ]
+        },
+        {
+          "Name": "PROCESSING_TYPE",
+          "Values": [
+            "L1.1"
+          ]
+        },
+        {
+          "Name": "PROCESSING_DESCRIPTION",
+          "Values": [
+            "ALOS PALSAR Level 1.1 processing level. Single-Look Complex (SLC) equally spaced on slant range.  Product generated for all non-SCANSAR data.  SLC generated and edited for each polarization of multi-polarization mode."
+          ]
+        },
+        {
+          "Name": "PROCESSING_LEVEL",
+          "Values": [
+            "L1"
+          ]
+        },
+        {
+          "Name": "PROCESSING_TYPE_DISPLAY",
+          "Values": [
+            "Level 1.1 Image"
+          ]
+        },
+        {
+          "Name": "BYTES",
+          "Values": [
+            "1416052019"
+          ]
+        }
+      ],
+      "SpatialExtent": {
+        "HorizontalSpatialDomain": {
+          "Geometry": {
+            "GPolygons": [
+              {
+                "Boundary": {
+                  "Points": [
+                    {
+                      "Latitude": 42.285,
+                      "Longitude": 77.062
+                    },
+                    {
+                      "Latitude": 41.77,
+                      "Longitude": 77.187
+                    },
+                    {
+                      "Latitude": 41.88,
+                      "Longitude": 78.024
+                    },
+                    {
+                      "Latitude": 42.394,
+                      "Longitude": 77.905
+                    },
+                    {
+                      "Latitude": 42.285,
+                      "Longitude": 77.062
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      "ProviderDates": [
+        {
+          "Type": "Insert",
+          "Date": "2021-11-23T07:34:56.000Z"
+        },
+        {
+          "Type": "Update",
+          "Date": "2021-11-23T07:34:56.000Z"
+        }
+      ],
+      "CollectionReference": {
+        "EntryTitle": "ALOS_PALSAR_LEVEL1.1"
+      },
+      "RelatedUrls": [
+        {
+          "Type": "GET DATA",
+          "URL": "https://datapool.asf.alaska.edu/L1.1/A3/ALPSRP230860830-H1.1__A.zip"
+        },
+        {
+          "Type": "GET RELATED VISUALIZATION",
+          "URL": "https://datapool.asf.alaska.edu/BROWSE/A3/EALPSRP230860830.jpg"
+        }
+      ],
+      "DataGranule": {
+        "ArchiveAndDistributionInformation": [
+          {
+            "Name": "Not provided",
+            "Size": 1350.4524412155151,
+            "SizeUnit": "MB"
+          }
+        ],
+        "DayNightFlag": "Unspecified",
+        "Identifiers": [
+          {
+            "Identifier": "ALPSRP230860830",
+            "IdentifierType": "ProducerGranuleId"
+          }
+        ],
+        "ProductionDateTime": "2010-05-25T17:14:41.987Z"
+      },
+      "Platforms": [
+        {
+          "Instruments": [
+            {
+              "ComposedOf": [
+                {
+                  "ShortName": "FBD"
+                }
+              ],
+              "ShortName": "PALSAR"
+            }
+          ],
+          "ShortName": "ALOS"
+        }
+      ],
+      "MetadataSpecification": {
+        "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+        "Name": "UMM-G",
+        "Version": "1.6.7"
+      }
+    }
+  },
+  {
+    "meta": {
+      "concept-type": "granule",
+      "concept-id": "G2188390066-ASF",
+      "revision-id": 1,
+      "native-id": "ALPSRP237570830-L1.1",
+      "collection-concept-id": "C1206485527-ASF",
+      "provider-id": "ASF",
+      "format": "application/vnd.nasa.cmr.umm+json",
+      "revision-date": "2021-12-22T06:58:03.378Z"
+    },
+    "umm": {
+      "TemporalExtent": {
+        "RangeDateTime": {
+          "BeginningDateTime": "2010-07-10T17:14:14.046Z",
+          "EndingDateTime": "2010-07-10T17:14:22.580Z"
+        }
+      },
+      "OrbitCalculatedSpatialDomains": [
+        {
+          "OrbitNumber": 23757
+        }
+      ],
+      "GranuleUR": "ALPSRP237570830-L1.1",
+      "AdditionalAttributes": [
+        {
+          "Name": "ASF_PLATFORM",
+          "Values": [
+            "ALOS"
+          ]
+        },
+        {
+          "Name": "FRAME_NUMBER",
+          "Values": [
+            "830"
+          ]
+        },
+        {
+          "Name": "CENTER_FRAME_ID",
+          "Values": [
+            "830"
+          ]
+        },
+        {
+          "Name": "CENTER_ESA_FRAME",
+          "Values": [
+            "840"
+          ]
+        },
+        {
+          "Name": "PATH_NUMBER",
+          "Values": [
+            "519"
+          ]
+        },
+        {
+          "Name": "ASCENDING_DESCENDING",
+          "Values": [
+            "ASCENDING"
+          ]
+        },
+        {
+          "Name": "LOOK_DIRECTION",
+          "Values": [
+            "R"
+          ]
+        },
+        {
+          "Name": "OFF_NADIR_ANGLE",
+          "Values": [
+            "34.3"
+          ]
+        },
+        {
+          "Name": "ACQUISITION_DATE",
+          "Values": [
+            "2010-07-10T17:14:14.046Z"
+          ]
+        },
+        {
+          "Name": "PROCESSING_DATE",
+          "Values": [
+            "2021-12-22T06:57:56.000Z"
+          ]
+        },
+        {
+          "Name": "CENTER_LON",
+          "Values": [
+            "77.551"
+          ]
+        },
+        {
+          "Name": "CENTER_LAT",
+          "Values": [
+            "42.081"
+          ]
+        },
+        {
+          "Name": "NEAR_START_LAT",
+          "Values": [
+            "42.39"
+          ]
+        },
+        {
+          "Name": "NEAR_START_LON",
+          "Values": [
+            "77.909"
+          ]
+        },
+        {
+          "Name": "FAR_START_LAT",
+          "Values": [
+            "41.878"
+          ]
+        },
+        {
+          "Name": "FAR_START_LON",
+          "Values": [
+            "78.027"
+          ]
+        },
+        {
+          "Name": "FAR_END_LAT",
+          "Values": [
+            "41.77"
+          ]
+        },
+        {
+          "Name": "FAR_END_LON",
+          "Values": [
+            "77.196"
+          ]
+        },
+        {
+          "Name": "NEAR_END_LAT",
+          "Values": [
+            "42.282"
+          ]
+        },
+        {
+          "Name": "NEAR_END_LON",
+          "Values": [
+            "77.071"
+          ]
+        },
+        {
+          "Name": "BEAM_MODE_TYPE",
+          "Values": [
+            "FBD"
+          ]
+        },
+        {
+          "Name": "BEAM_MODE",
+          "Values": [
+            "FBD"
+          ]
+        },
+        {
+          "Name": "BEAM_MODE_DESC",
+          "Values": [
+            "ALOS PALSAR sensor: High Resolution Observation Mode (dual polarization)"
+          ]
+        },
+        {
+          "Name": "POLARIZATION",
+          "Values": [
+            "HH+HV"
+          ]
+        },
+        {
+          "Name": "GRANULE_TYPE",
+          "Values": [
+            "ALOS_PALSAR_SCENE"
+          ]
+        },
+        {
+          "Name": "PROCESSING_TYPE",
+          "Values": [
+            "L1.1"
+          ]
+        },
+        {
+          "Name": "PROCESSING_DESCRIPTION",
+          "Values": [
+            "ALOS PALSAR Level 1.1 processing level. Single-Look Complex (SLC) equally spaced on slant range.  Product generated for all non-SCANSAR data.  SLC generated and edited for each polarization of multi-polarization mode."
+          ]
+        },
+        {
+          "Name": "PROCESSING_LEVEL",
+          "Values": [
+            "L1"
+          ]
+        },
+        {
+          "Name": "PROCESSING_TYPE_DISPLAY",
+          "Values": [
+            "Level 1.1 Image"
+          ]
+        },
+        {
+          "Name": "BYTES",
+          "Values": [
+            "1406613490"
+          ]
+        }
+      ],
+      "SpatialExtent": {
+        "HorizontalSpatialDomain": {
+          "Geometry": {
+            "GPolygons": [
+              {
+                "Boundary": {
+                  "Points": [
+                    {
+                      "Latitude": 42.282,
+                      "Longitude": 77.071
+                    },
+                    {
+                      "Latitude": 41.77,
+                      "Longitude": 77.196
+                    },
+                    {
+                      "Latitude": 41.878,
+                      "Longitude": 78.027
+                    },
+                    {
+                      "Latitude": 42.39,
+                      "Longitude": 77.909
+                    },
+                    {
+                      "Latitude": 42.282,
+                      "Longitude": 77.071
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      "ProviderDates": [
+        {
+          "Type": "Insert",
+          "Date": "2021-12-22T06:57:56.000Z"
+        },
+        {
+          "Type": "Update",
+          "Date": "2021-12-22T06:57:56.000Z"
+        }
+      ],
+      "CollectionReference": {
+        "EntryTitle": "ALOS_PALSAR_LEVEL1.1"
+      },
+      "RelatedUrls": [
+        {
+          "Type": "GET DATA",
+          "URL": "https://datapool.asf.alaska.edu/L1.1/A3/ALPSRP237570830-H1.1__A.zip"
+        },
+        {
+          "Type": "GET RELATED VISUALIZATION",
+          "URL": "https://datapool.asf.alaska.edu/BROWSE/A3/EALPSRP237570830.jpg"
+        }
+      ],
+      "DataGranule": {
+        "ArchiveAndDistributionInformation": [
+          {
+            "Name": "Not provided",
+            "Size": 1341.4511585235596,
+            "SizeUnit": "MB"
+          }
+        ],
+        "DayNightFlag": "Unspecified",
+        "Identifiers": [
+          {
+            "Identifier": "ALPSRP237570830",
+            "IdentifierType": "ProducerGranuleId"
+          }
+        ],
+        "ProductionDateTime": "2010-07-10T17:14:14.046Z"
+      },
+      "Platforms": [
+        {
+          "Instruments": [
+            {
+              "ComposedOf": [
+                {
+                  "ShortName": "FBD"
+                }
+              ],
+              "ShortName": "PALSAR"
+            }
+          ],
+          "ShortName": "ALOS"
+        }
+      ],
+      "MetadataSpecification": {
+        "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+        "Name": "UMM-G",
+        "Version": "1.6.7"
+      }
+    }
+  },
+  {
+    "meta": {
+      "concept-type": "granule",
+      "concept-id": "G1287568726-ASF",
+      "revision-id": 2,
+      "native-id": "ALPSRP240050830-L1.1",
+      "collection-concept-id": "C1206485527-ASF",
+      "provider-id": "ASF",
+      "format": "application/vnd.nasa.cmr.umm+json",
+      "revision-date": "2021-12-24T11:28:57.286Z"
+    },
+    "umm": {
+      "TemporalExtent": {
+        "RangeDateTime": {
+          "BeginningDateTime": "2010-07-27T17:16:11.198Z",
+          "EndingDateTime": "2010-07-27T17:16:19.732Z"
+        }
+      },
+      "OrbitCalculatedSpatialDomains": [
+        {
+          "OrbitNumber": 24005
+        }
+      ],
+      "GranuleUR": "ALPSRP240050830-L1.1",
+      "AdditionalAttributes": [
+        {
+          "Name": "ASF_PLATFORM",
+          "Values": [
+            "ALOS"
+          ]
+        },
+        {
+          "Name": "FRAME_NUMBER",
+          "Values": [
+            "830"
+          ]
+        },
+        {
+          "Name": "CENTER_FRAME_ID",
+          "Values": [
+            "830"
+          ]
+        },
+        {
+          "Name": "CENTER_ESA_FRAME",
+          "Values": [
+            "840"
+          ]
+        },
+        {
+          "Name": "PATH_NUMBER",
+          "Values": [
+            "520"
+          ]
+        },
+        {
+          "Name": "ASCENDING_DESCENDING",
+          "Values": [
+            "ASCENDING"
+          ]
+        },
+        {
+          "Name": "LOOK_DIRECTION",
+          "Values": [
+            "R"
+          ]
+        },
+        {
+          "Name": "OFF_NADIR_ANGLE",
+          "Values": [
+            "34.3"
+          ]
+        },
+        {
+          "Name": "ACQUISITION_DATE",
+          "Values": [
+            "2010-07-27T17:16:11.198Z"
+          ]
+        },
+        {
+          "Name": "PROCESSING_DATE",
+          "Values": [
+            "2021-12-24T11:28:49.000Z"
+          ]
+        },
+        {
+          "Name": "CENTER_LON",
+          "Values": [
+            "77.02"
+          ]
+        },
+        {
+          "Name": "CENTER_LAT",
+          "Values": [
+            "42.07"
+          ]
+        },
+        {
+          "Name": "NEAR_START_LAT",
+          "Values": [
+            "42.378"
+          ]
+        },
+        {
+          "Name": "NEAR_START_LON",
+          "Values": [
+            "77.376"
+          ]
+        },
+        {
+          "Name": "FAR_START_LAT",
+          "Values": [
+            "41.866"
+          ]
+        },
+        {
+          "Name": "FAR_START_LON",
+          "Values": [
+            "77.494"
+          ]
+        },
+        {
+          "Name": "FAR_END_LAT",
+          "Values": [
+            "41.76"
+          ]
+        },
+        {
+          "Name": "FAR_END_LON",
+          "Values": [
+            "76.669"
+          ]
+        },
+        {
+          "Name": "NEAR_END_LAT",
+          "Values": [
+            "42.272"
+          ]
+        },
+        {
+          "Name": "NEAR_END_LON",
+          "Values": [
+            "76.544"
+          ]
+        },
+        {
+          "Name": "BEAM_MODE_TYPE",
+          "Values": [
+            "FBD"
+          ]
+        },
+        {
+          "Name": "BEAM_MODE",
+          "Values": [
+            "FBD"
+          ]
+        },
+        {
+          "Name": "BEAM_MODE_DESC",
+          "Values": [
+            "ALOS PALSAR sensor: High Resolution Observation Mode (dual polarization)"
+          ]
+        },
+        {
+          "Name": "POLARIZATION",
+          "Values": [
+            "HH+HV"
+          ]
+        },
+        {
+          "Name": "GRANULE_TYPE",
+          "Values": [
+            "ALOS_PALSAR_SCENE"
+          ]
+        },
+        {
+          "Name": "PROCESSING_TYPE",
+          "Values": [
+            "L1.1"
+          ]
+        },
+        {
+          "Name": "PROCESSING_DESCRIPTION",
+          "Values": [
+            "ALOS PALSAR Level 1.1 processing level. Single-Look Complex (SLC) equally spaced on slant range.  Product generated for all non-SCANSAR data.  SLC generated and edited for each polarization of multi-polarization mode."
+          ]
+        },
+        {
+          "Name": "PROCESSING_LEVEL",
+          "Values": [
+            "L1"
+          ]
+        },
+        {
+          "Name": "PROCESSING_TYPE_DISPLAY",
+          "Values": [
+            "Level 1.1 Image"
+          ]
+        },
+        {
+          "Name": "BYTES",
+          "Values": [
+            "1397062382"
+          ]
+        }
+      ],
+      "SpatialExtent": {
+        "HorizontalSpatialDomain": {
+          "Geometry": {
+            "GPolygons": [
+              {
+                "Boundary": {
+                  "Points": [
+                    {
+                      "Latitude": 42.272,
+                      "Longitude": 76.544
+                    },
+                    {
+                      "Latitude": 41.76,
+                      "Longitude": 76.669
+                    },
+                    {
+                      "Latitude": 41.866,
+                      "Longitude": 77.494
+                    },
+                    {
+                      "Latitude": 42.378,
+                      "Longitude": 77.376
+                    },
+                    {
+                      "Latitude": 42.272,
+                      "Longitude": 76.544
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      "ProviderDates": [
+        {
+          "Type": "Insert",
+          "Date": "2021-12-24T11:28:49.000Z"
+        },
+        {
+          "Type": "Update",
+          "Date": "2021-12-24T11:28:49.000Z"
+        }
+      ],
+      "CollectionReference": {
+        "EntryTitle": "ALOS_PALSAR_LEVEL1.1"
+      },
+      "RelatedUrls": [
+        {
+          "Type": "GET DATA",
+          "URL": "https://datapool.asf.alaska.edu/L1.1/A3/ALPSRP240050830-H1.1__A.zip"
+        },
+        {
+          "Type": "GET RELATED VISUALIZATION",
+          "URL": "https://datapool.asf.alaska.edu/BROWSE/A3/EALPSRP240050830.jpg"
+        }
+      ],
+      "DataGranule": {
+        "ArchiveAndDistributionInformation": [
+          {
+            "Name": "Not provided",
+            "Size": 1332.3425121307373,
+            "SizeUnit": "MB"
+          }
+        ],
+        "DayNightFlag": "Unspecified",
+        "Identifiers": [
+          {
+            "Identifier": "ALPSRP240050830",
+            "IdentifierType": "ProducerGranuleId"
+          }
+        ],
+        "ProductionDateTime": "2010-07-27T17:16:11.198Z"
+      },
+      "Platforms": [
+        {
+          "Instruments": [
+            {
+              "ComposedOf": [
+                {
+                  "ShortName": "FBD"
+                }
+              ],
+              "ShortName": "PALSAR"
+            }
+          ],
+          "ShortName": "ALOS"
+        }
+      ],
+      "MetadataSpecification": {
+        "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+        "Name": "UMM-G",
+        "Version": "1.6.7"
+      }
+    }
+  },
+  {
+    "meta": {
+      "concept-type": "granule",
+      "concept-id": "G1287876223-ASF",
+      "revision-id": 2,
+      "native-id": "ALPSRP244280830-L1.1",
+      "collection-concept-id": "C1206485527-ASF",
+      "provider-id": "ASF",
+      "format": "application/vnd.nasa.cmr.umm+json",
+      "revision-date": "2022-01-12T05:56:14.382Z"
+    },
+    "umm": {
+      "TemporalExtent": {
+        "RangeDateTime": {
+          "BeginningDateTime": "2010-08-25T17:13:41.804Z",
+          "EndingDateTime": "2010-08-25T17:13:50.338Z"
+        }
+      },
+      "OrbitCalculatedSpatialDomains": [
+        {
+          "OrbitNumber": 24428
+        }
+      ],
+      "GranuleUR": "ALPSRP244280830-L1.1",
+      "AdditionalAttributes": [
+        {
+          "Name": "ASF_PLATFORM",
+          "Values": [
+            "ALOS"
+          ]
+        },
+        {
+          "Name": "FRAME_NUMBER",
+          "Values": [
+            "830"
+          ]
+        },
+        {
+          "Name": "CENTER_FRAME_ID",
+          "Values": [
+            "830"
+          ]
+        },
+        {
+          "Name": "CENTER_ESA_FRAME",
+          "Values": [
+            "840"
+          ]
+        },
+        {
+          "Name": "PATH_NUMBER",
+          "Values": [
+            "519"
+          ]
+        },
+        {
+          "Name": "ASCENDING_DESCENDING",
+          "Values": [
+            "ASCENDING"
+          ]
+        },
+        {
+          "Name": "LOOK_DIRECTION",
+          "Values": [
+            "R"
+          ]
+        },
+        {
+          "Name": "OFF_NADIR_ANGLE",
+          "Values": [
+            "34.3"
+          ]
+        },
+        {
+          "Name": "ACQUISITION_DATE",
+          "Values": [
+            "2010-08-25T17:13:41.804Z"
+          ]
+        },
+        {
+          "Name": "PROCESSING_DATE",
+          "Values": [
+            "2022-01-12T05:56:06.000Z"
+          ]
+        },
+        {
+          "Name": "CENTER_LON",
+          "Values": [
+            "77.556"
+          ]
+        },
+        {
+          "Name": "CENTER_LAT",
+          "Values": [
+            "42.077"
+          ]
+        },
+        {
+          "Name": "NEAR_START_LAT",
+          "Values": [
+            "42.386"
+          ]
+        },
+        {
+          "Name": "NEAR_START_LON",
+          "Values": [
+            "77.911"
+          ]
+        },
+        {
+          "Name": "FAR_START_LAT",
+          "Values": [
+            "41.873"
+          ]
+        },
+        {
+          "Name": "FAR_START_LON",
+          "Values": [
+            "78.029"
+          ]
+        },
+        {
+          "Name": "FAR_END_LAT",
+          "Values": [
+            "41.767"
+          ]
+        },
+        {
+          "Name": "FAR_END_LON",
+          "Values": [
+            "77.204"
+          ]
+        },
+        {
+          "Name": "NEAR_END_LAT",
+          "Values": [
+            "42.279"
+          ]
+        },
+        {
+          "Name": "NEAR_END_LON",
+          "Values": [
+            "77.079"
+          ]
+        },
+        {
+          "Name": "BEAM_MODE_TYPE",
+          "Values": [
+            "FBD"
+          ]
+        },
+        {
+          "Name": "BEAM_MODE",
+          "Values": [
+            "FBD"
+          ]
+        },
+        {
+          "Name": "BEAM_MODE_DESC",
+          "Values": [
+            "ALOS PALSAR sensor: High Resolution Observation Mode (dual polarization)"
+          ]
+        },
+        {
+          "Name": "POLARIZATION",
+          "Values": [
+            "HH+HV"
+          ]
+        },
+        {
+          "Name": "GRANULE_TYPE",
+          "Values": [
+            "ALOS_PALSAR_SCENE"
+          ]
+        },
+        {
+          "Name": "PROCESSING_TYPE",
+          "Values": [
+            "L1.1"
+          ]
+        },
+        {
+          "Name": "PROCESSING_DESCRIPTION",
+          "Values": [
+            "ALOS PALSAR Level 1.1 processing level. Single-Look Complex (SLC) equally spaced on slant range.  Product generated for all non-SCANSAR data.  SLC generated and edited for each polarization of multi-polarization mode."
+          ]
+        },
+        {
+          "Name": "PROCESSING_LEVEL",
+          "Values": [
+            "L1"
+          ]
+        },
+        {
+          "Name": "PROCESSING_TYPE_DISPLAY",
+          "Values": [
+            "Level 1.1 Image"
+          ]
+        },
+        {
+          "Name": "BYTES",
+          "Values": [
+            "1397052370"
+          ]
+        }
+      ],
+      "SpatialExtent": {
+        "HorizontalSpatialDomain": {
+          "Geometry": {
+            "GPolygons": [
+              {
+                "Boundary": {
+                  "Points": [
+                    {
+                      "Latitude": 42.279,
+                      "Longitude": 77.079
+                    },
+                    {
+                      "Latitude": 41.767,
+                      "Longitude": 77.204
+                    },
+                    {
+                      "Latitude": 41.873,
+                      "Longitude": 78.029
+                    },
+                    {
+                      "Latitude": 42.386,
+                      "Longitude": 77.911
+                    },
+                    {
+                      "Latitude": 42.279,
+                      "Longitude": 77.079
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      "ProviderDates": [
+        {
+          "Type": "Insert",
+          "Date": "2022-01-12T05:56:06.000Z"
+        },
+        {
+          "Type": "Update",
+          "Date": "2022-01-12T05:56:06.000Z"
+        }
+      ],
+      "CollectionReference": {
+        "EntryTitle": "ALOS_PALSAR_LEVEL1.1"
+      },
+      "RelatedUrls": [
+        {
+          "Type": "GET DATA",
+          "URL": "https://datapool.asf.alaska.edu/L1.1/A3/ALPSRP244280830-H1.1__A.zip"
+        },
+        {
+          "Type": "GET RELATED VISUALIZATION",
+          "URL": "https://datapool.asf.alaska.edu/BROWSE/A3/EALPSRP244280830.jpg"
+        }
+      ],
+      "DataGranule": {
+        "ArchiveAndDistributionInformation": [
+          {
+            "Name": "Not provided",
+            "Size": 1332.3329639434814,
+            "SizeUnit": "MB"
+          }
+        ],
+        "DayNightFlag": "Unspecified",
+        "Identifiers": [
+          {
+            "Identifier": "ALPSRP244280830",
+            "IdentifierType": "ProducerGranuleId"
+          }
+        ],
+        "ProductionDateTime": "2010-08-25T17:13:41.804Z"
+      },
+      "Platforms": [
+        {
+          "Instruments": [
+            {
+              "ComposedOf": [
+                {
+                  "ShortName": "FBD"
+                }
+              ],
+              "ShortName": "PALSAR"
+            }
+          ],
+          "ShortName": "ALOS"
+        }
+      ],
+      "MetadataSpecification": {
+        "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+        "Name": "UMM-G",
+        "Version": "1.6.7"
+      }
+    }
+  },
+  {
+    "meta": {
+      "concept-type": "granule",
+      "concept-id": "G2208623767-ASF",
+      "revision-id": 2,
+      "native-id": "ALPSRP250990830-L1.1",
+      "collection-concept-id": "C1206485527-ASF",
+      "provider-id": "ASF",
+      "format": "application/vnd.nasa.cmr.umm+json",
+      "revision-date": "2022-01-31T21:18:14.796Z"
+    },
+    "umm": {
+      "TemporalExtent": {
+        "RangeDateTime": {
+          "BeginningDateTime": "2010-10-10T17:13:03.047Z",
+          "EndingDateTime": "2010-10-10T17:13:11.617Z"
+        }
+      },
+      "OrbitCalculatedSpatialDomains": [
+        {
+          "OrbitNumber": 25099
+        }
+      ],
+      "GranuleUR": "ALPSRP250990830-L1.1",
+      "AdditionalAttributes": [
+        {
+          "Name": "ASF_PLATFORM",
+          "Values": [
+            "ALOS"
+          ]
+        },
+        {
+          "Name": "FRAME_NUMBER",
+          "Values": [
+            "830"
+          ]
+        },
+        {
+          "Name": "CENTER_FRAME_ID",
+          "Values": [
+            "830"
+          ]
+        },
+        {
+          "Name": "CENTER_ESA_FRAME",
+          "Values": [
+            "840"
+          ]
+        },
+        {
+          "Name": "PATH_NUMBER",
+          "Values": [
+            "519"
+          ]
+        },
+        {
+          "Name": "ASCENDING_DESCENDING",
+          "Values": [
+            "ASCENDING"
+          ]
+        },
+        {
+          "Name": "LOOK_DIRECTION",
+          "Values": [
+            "R"
+          ]
+        },
+        {
+          "Name": "OFF_NADIR_ANGLE",
+          "Values": [
+            "34.3"
+          ]
+        },
+        {
+          "Name": "ACQUISITION_DATE",
+          "Values": [
+            "2010-10-10T17:13:03.047Z"
+          ]
+        },
+        {
+          "Name": "PROCESSING_DATE",
+          "Values": [
+            "2022-01-31T21:18:07.000Z"
+          ]
+        },
+        {
+          "Name": "CENTER_LON",
+          "Values": [
+            "77.559"
+          ]
+        },
+        {
+          "Name": "CENTER_LAT",
+          "Values": [
+            "42.084"
+          ]
+        },
+        {
+          "Name": "NEAR_START_LAT",
+          "Values": [
+            "42.395"
+          ]
+        },
+        {
+          "Name": "NEAR_START_LON",
+          "Values": [
+            "77.914"
+          ]
+        },
+        {
+          "Name": "FAR_START_LAT",
+          "Values": [
+            "41.88"
+          ]
+        },
+        {
+          "Name": "FAR_START_LON",
+          "Values": [
+            "78.032"
+          ]
+        },
+        {
+          "Name": "FAR_END_LAT",
+          "Values": [
+            "41.772"
+          ]
+        },
+        {
+          "Name": "FAR_END_LON",
+          "Values": [
+            "77.207"
+          ]
+        },
+        {
+          "Name": "NEAR_END_LAT",
+          "Values": [
+            "42.287"
+          ]
+        },
+        {
+          "Name": "NEAR_END_LON",
+          "Values": [
+            "77.082"
+          ]
+        },
+        {
+          "Name": "BEAM_MODE_TYPE",
+          "Values": [
+            "FBD"
+          ]
+        },
+        {
+          "Name": "BEAM_MODE",
+          "Values": [
+            "FBD"
+          ]
+        },
+        {
+          "Name": "BEAM_MODE_DESC",
+          "Values": [
+            "ALOS PALSAR sensor: High Resolution Observation Mode (dual polarization)"
+          ]
+        },
+        {
+          "Name": "POLARIZATION",
+          "Values": [
+            "HH+HV"
+          ]
+        },
+        {
+          "Name": "GRANULE_TYPE",
+          "Values": [
+            "ALOS_PALSAR_SCENE"
+          ]
+        },
+        {
+          "Name": "PROCESSING_TYPE",
+          "Values": [
+            "L1.1"
+          ]
+        },
+        {
+          "Name": "PROCESSING_DESCRIPTION",
+          "Values": [
+            "ALOS PALSAR Level 1.1 processing level. Single-Look Complex (SLC) equally spaced on slant range.  Product generated for all non-SCANSAR data.  SLC generated and edited for each polarization of multi-polarization mode."
+          ]
+        },
+        {
+          "Name": "PROCESSING_LEVEL",
+          "Values": [
+            "L1"
+          ]
+        },
+        {
+          "Name": "PROCESSING_TYPE_DISPLAY",
+          "Values": [
+            "Level 1.1 Image"
+          ]
+        },
+        {
+          "Name": "BYTES",
+          "Values": [
+            "1397050576"
+          ]
+        }
+      ],
+      "SpatialExtent": {
+        "HorizontalSpatialDomain": {
+          "Geometry": {
+            "GPolygons": [
+              {
+                "Boundary": {
+                  "Points": [
+                    {
+                      "Latitude": 42.287,
+                      "Longitude": 77.082
+                    },
+                    {
+                      "Latitude": 41.772,
+                      "Longitude": 77.207
+                    },
+                    {
+                      "Latitude": 41.88,
+                      "Longitude": 78.032
+                    },
+                    {
+                      "Latitude": 42.395,
+                      "Longitude": 77.914
+                    },
+                    {
+                      "Latitude": 42.287,
+                      "Longitude": 77.082
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      "ProviderDates": [
+        {
+          "Type": "Insert",
+          "Date": "2022-01-31T21:18:07.000Z"
+        },
+        {
+          "Type": "Update",
+          "Date": "2022-01-31T21:18:07.000Z"
+        }
+      ],
+      "CollectionReference": {
+        "EntryTitle": "ALOS_PALSAR_LEVEL1.1"
+      },
+      "RelatedUrls": [
+        {
+          "Type": "GET DATA",
+          "URL": "https://datapool.asf.alaska.edu/L1.1/A3/ALPSRP250990830-H1.1__A.zip"
+        },
+        {
+          "Type": "GET RELATED VISUALIZATION",
+          "URL": "https://datapool.asf.alaska.edu/BROWSE/A3/EALPSRP250990830.jpg"
+        }
+      ],
+      "DataGranule": {
+        "ArchiveAndDistributionInformation": [
+          {
+            "Name": "Not provided",
+            "Size": 1332.3312530517578,
+            "SizeUnit": "MB"
+          }
+        ],
+        "DayNightFlag": "Unspecified",
+        "Identifiers": [
+          {
+            "Identifier": "ALPSRP250990830",
+            "IdentifierType": "ProducerGranuleId"
+          }
+        ],
+        "ProductionDateTime": "2010-10-10T17:13:03.047Z"
+      },
+      "Platforms": [
+        {
+          "Instruments": [
+            {
+              "ComposedOf": [
+                {
+                  "ShortName": "FBD"
+                }
+              ],
+              "ShortName": "PALSAR"
+            }
+          ],
+          "ShortName": "ALOS"
+        }
+      ],
+      "MetadataSpecification": {
+        "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.7",
+        "Name": "UMM-G",
+        "Version": "1.6.7"
+      }
+    }
+  }
+]
